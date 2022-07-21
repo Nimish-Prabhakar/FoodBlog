@@ -1,0 +1,40 @@
+.blogWrapper {
+  width: 70%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-bottom: 140px;
+}
+
+.blogPhoto {
+  width: 60%;
+}
+
+.blogIconInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  margin-top: -15px;
+}
+
+.blogIconInfoMini {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.blogPhotoHeader {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.blogPara {
+  width: 60%;
+  letter-spacing: 3px;
+  line-height: 25px;
+}

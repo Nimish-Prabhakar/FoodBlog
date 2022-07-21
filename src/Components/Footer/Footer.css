@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Courgette&family=Edu+TAS+Beginner:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@500;700&family=Gloria+Hallelujah&display=swap');
+
+.footerContainer {
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  margin-top: -90px;
+}
+
+.organicBombFooter {
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Courgette', cursive;
+  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 35px;
+}
+
+.footerFirstNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerNavLinks {
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footerIcons {
+  font-size: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}

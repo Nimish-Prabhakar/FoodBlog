@@ -1,0 +1,67 @@
+.homeContainer {
+  width: 100vw;
+  height: 190vh;
+  overflow: hidden;
+}
+
+.homeUpWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftHomeSide {
+  width: 30%;
+  margin-top: 100px;
+  margin-left: 100px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftHeader {
+  letter-spacing: 10px;
+  line-height: 50px;
+}
+
+.leftSubHeader {
+  font-weight: 200;
+  margin-top: -10px;
+  line-height: 30px;
+}
+
+.rightHomeSide {
+  width: 70%;
+}
+
+.rightHomeImg {
+  width: 65%;
+  margin-top: 50px;
+  margin-left: 20%;
+}
+
+.latestBlogWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.latestBlogs {
+  letter-spacing: 4px;
+}
+
+.blogCardsFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  margin-top: 30px;
+}
+
+.hrBar {
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
