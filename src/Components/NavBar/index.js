@@ -13,7 +13,7 @@ function NavBar() {
 
   return (
     <div className="NavBarContainer">
-      <p className="organicBomb">ORGANIC BOMB</p>
+      <p className="organicBomb">Number One Meals</p>
       <nav className="navLinkWrapper">
         <NavLink
           className="navLinks"

@@ -8,7 +8,7 @@ import './Footer.css';
 function Footer() {
   return (
     <div className="footerContainer">
-      <p className="organicBombFooter">ORGANIC BOMB</p>
+      <p className="organicBombFooter">Number One Meals</p>
       <div className="footerFirstNav">
         <NavLink className="footerNavLinks" to="/about">
           ABOUT US
