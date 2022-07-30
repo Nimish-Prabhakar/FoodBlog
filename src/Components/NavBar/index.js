@@ -9,8 +9,6 @@ function NavBar() {
     borderBottom: '1px solid black',
   };
 
-  let activeClassName = 'underline';
-
   return (
     <div className="NavBarContainer">
       <p className="organicBomb">Number One Meals</p>
@@ -38,6 +36,20 @@ function NavBar() {
         </NavLink>
         <NavLink
           className="navLinks"
+          to="/deserts"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          Deserts
+        </NavLink>
+        <NavLink
+          className="navLinks"
+          to="/drinks"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          Drinks
+        </NavLink>
+        <NavLink
+          className="navLinks"
           to="/about"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
@@ -46,7 +58,6 @@ function NavBar() {
       </nav>
       <div className="search">
         <input className="searchInput" placeholder="Search..." />
-        <FaUser className="userIcon" />
       </div>
     </div>
   );

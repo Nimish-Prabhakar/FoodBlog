@@ -21,6 +21,7 @@ function BlogPage() {
             para3={blog.para3}
             type={blog.type}
             header={blog.header}
+            comments={blog.comments}
           />
         );
       })}

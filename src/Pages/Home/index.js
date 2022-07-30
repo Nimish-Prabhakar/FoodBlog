@@ -5,6 +5,8 @@ import BlogCard from '../../Components/BlogCard';
 import {
   blogCardDetails,
   latestRecepiesDetails,
+  desertCardDetails,
+  drinkCardDetails,
 } from '../../Constants/appConstants';
 import './Home.css';
 
@@ -57,6 +59,40 @@ function Home() {
           <h2 className="latestBlogs">MOST READ RECEPIES</h2>
           <div className="blogCardsFlex">
             {latestRecepiesDetails.map((blog, index) => {
+              return (
+                <BlogCard
+                  key={index}
+                  header={blog.header}
+                  subHeader={blog.subHeader}
+                  date={blog.date}
+                  views={blog.views}
+                  image={blog.image}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className="latestBlogWrapper">
+          <h2 className="latestBlogs">DELICIOUS DESERTS</h2>
+          <div className="blogCardsFlex">
+            {desertCardDetails.map((blog, index) => {
+              return (
+                <BlogCard
+                  key={index}
+                  header={blog.header}
+                  subHeader={blog.subHeader}
+                  date={blog.date}
+                  views={blog.views}
+                  image={blog.image}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className="latestBlogWrapper">
+          <h2 className="latestBlogs">BREATHTAKING DRINKS</h2>
+          <div className="blogCardsFlex">
+            {drinkCardDetails.map((blog, index) => {
               return (
                 <BlogCard
                   key={index}
