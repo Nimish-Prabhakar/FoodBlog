@@ -41,7 +41,7 @@ function Footer() {
         <NavLink className="footerNavLinks" to="/about">
           PARTNER WITH US
         </NavLink>
-        <NavLink className="footerNavLinks" to="/">
+        <NavLink className="footerNavLinks" to="/privacy-policy">
           PRIVACY POLICY
         </NavLink>
         <NavLink className="footerNavLinks" to="/blog">

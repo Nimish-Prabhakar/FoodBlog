@@ -6,6 +6,7 @@ import BlogPage from './Pages/Blogs';
 import DesertsPage from './Pages/Deserts';
 import DrinksPage from './Pages/Drinks';
 import RecepiesPage from './Pages/Recepies';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/deserts" element={<DesertsPage />} />
         <Route path="/drinks" element={<DrinksPage />} />
         <Route path="/recepies" element={<RecepiesPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </BrowserRouter>

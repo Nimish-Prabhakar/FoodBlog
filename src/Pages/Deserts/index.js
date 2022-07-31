@@ -25,7 +25,6 @@ function DesertsPage() {
           />
         );
       })}
-
       <hr className="hrBar" />
     </div>
   );
