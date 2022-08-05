@@ -65,8 +65,8 @@ function PrivacyPolicy() {
             (for example, the duration of a page visit).
           </li>
           <li>
-            Website refers to 121 About Travel, accessible from
-            http://121abouttravel.com/
+            Website refers to Number one meals, accessible from
+            https://numberonemeals.com
           </li>
           <li>
             You means the individual accessing or using the Service, or the

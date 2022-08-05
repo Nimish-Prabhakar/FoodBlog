@@ -16,11 +16,11 @@ function Home() {
       <div className="homeContainer">
         <div className="homeUpWrapper">
           <div className="leftHomeSide">
-            <h1 className="leftHeader">DO YOU WANT A HEALTHY LIFE?</h1>
+            <h1 className="leftHeader">Why should Keto have all the fun??</h1>
             <p className="leftSubHeader">
-              The first thing you need to do is to eat healthy. You can find
-              everything about healthy eating here. on this site you can both
-              read blogs and use healthy recepies.
+              Welcome aboard, you don’t need to be ruthless in order to be zero-
+              sized. Let us spice up your life with easy- peasy healthy-licious
+              recipes, blogs and much more!
             </p>
             <Button
               sx={{
