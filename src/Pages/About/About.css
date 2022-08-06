@@ -1,0 +1,30 @@
+.AboutWrapper {
+  width: 100vw;
+  height: 120vh;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+.aboutTags {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.aboutImages {
+  width: 40%;
+}
+
+.aboutImgFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}

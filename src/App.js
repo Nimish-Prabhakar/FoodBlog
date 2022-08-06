@@ -7,6 +7,7 @@ import DesertsPage from './Pages/Deserts';
 import DrinksPage from './Pages/Drinks';
 import RecepiesPage from './Pages/Recepies';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
+import About from './Pages/About';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/drinks" element={<DrinksPage />} />
         <Route path="/recepies" element={<RecepiesPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </BrowserRouter>
