@@ -22,7 +22,7 @@ function NavBar() {
         </NavLink>
         <NavLink
           className="navLinks"
-          to="/blog"
+          to="/blogs"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           Blog
