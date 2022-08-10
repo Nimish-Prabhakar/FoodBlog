@@ -2,8 +2,13 @@ import React from 'react';
 import Blog from '../../Components/Blog';
 import { mostReadRecepies } from '../../Constants/appConstants';
 import '../Blogs/Blogs.css';
+import useScript from '../../Components/useScript';
 
 function RecepiesPage() {
+  useScript(
+    'https://dvypar.com/na/waWQiOjExMzAwNjUsInNpZCI6MTE1MzUyMywid2lkIjozNjY2MjcsInNyYyI6Mn0=eyJ.js'
+  );
+
   return (
     <div className="blogsPageWrapper">
       <div className="blogsPageHeader">
@@ -25,8 +30,6 @@ function RecepiesPage() {
           />
         );
       })}
-
-      <hr className="hrBar" />
     </div>
   );
 }

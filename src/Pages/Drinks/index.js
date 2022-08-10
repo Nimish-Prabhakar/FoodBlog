@@ -2,6 +2,7 @@ import React from 'react';
 import Blog from '../../Components/Blog';
 import { latestDrinksDetails } from '../../Constants/appConstants';
 import '../Blogs/Blogs.css';
+import { Helmet } from 'react-helmet';
 
 function DrinksPage() {
   return (
@@ -25,8 +26,14 @@ function DrinksPage() {
           />
         );
       })}
-
-      <hr className="hrBar" />
+      <Helmet>
+        <script
+          async="async"
+          data-cfasync="false"
+          src="//pl17568951.highperformancegate.com/5fa170385178a32bef3ed45d5d529520/invoke.js"
+        ></script>
+        <div id="container-5fa170385178a32bef3ed45d5d529520"></div>
+      </Helmet>
     </div>
   );
 }
