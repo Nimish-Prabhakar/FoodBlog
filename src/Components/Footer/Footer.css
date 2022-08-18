@@ -39,3 +39,9 @@
   margin-left: 10px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+  .footerContainer {
+    margin-top: 0px;
+  }
+}

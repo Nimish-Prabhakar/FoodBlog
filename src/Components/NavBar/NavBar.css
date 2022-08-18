@@ -53,9 +53,14 @@
   font-size: 17px;
 }
 
-.userIcon {
-  font-size: 30px;
-  margin-top: 20px;
-  margin-left: 10px;
-  cursor: pointer;
+@media screen and (max-width: 1200px) {
+  .organicBomb {
+    font-size: 15px;
+  }
+  .navLinks {
+    font-size: 15px;
+  }
+  .searchInput {
+    font-size: 7px;
+  }
 }

@@ -8,6 +8,9 @@ const styles = {
     background: '#80c000',
     width: '50%',
     alignSelf: 'flex-start',
+    '@media screen and (max-width: 1200px)': {
+      width: '80%',
+    },
   },
 };
 

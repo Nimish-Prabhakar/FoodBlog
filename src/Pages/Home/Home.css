@@ -65,3 +65,25 @@
   margin-left: 70px;
   margin-right: 70px;
 }
+
+@media screen and (max-width: 1200px) {
+  .leftHomeSide {
+    font-size: 8px;
+  }
+  .leftHeader {
+    letter-spacing: 5px;
+    line-height: 30px;
+  }
+  .leftSubHeader {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .rightHomeImg {
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 25%;
+  }
+  .homeContainer {
+    height: 250vh;
+  }
+}
