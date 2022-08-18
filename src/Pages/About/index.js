@@ -39,7 +39,6 @@ function About() {
           <img className="aboutImages" src={About4} alt="about4" />
         </div>
       </div>
-      <hr className="hrBar" />
     </div>
   );
 }

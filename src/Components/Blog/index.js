@@ -2,7 +2,6 @@ import React from 'react';
 import { BiUser, BiTimeFive, BiFolder } from 'react-icons/bi';
 import { FaRegComment } from 'react-icons/fa';
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
 import './Blog.css';
 
 const styles = {
@@ -23,12 +22,6 @@ function Blog({
   para2,
   para3,
 }) {
-  const clickHandler = (e) => {
-    window.open(
-      'https://www.highperformancegate.com/mu78zqktg?key=4205fd171b8f12c6f91b10f9634efdde'
-    );
-  };
-
   return (
     <div className="blogWrapper">
       <img className="blogPhoto" src={image} alt="berryBlog" />
@@ -57,7 +50,7 @@ function Blog({
         {para3}
       </p>
 
-      <Button sx={styles.btn} variant="outlined" onClick={clickHandler}>
+      <Button sx={styles.btn} variant="outlined">
         Continue Reading
       </Button>
     </div>

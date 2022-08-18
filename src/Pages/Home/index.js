@@ -8,6 +8,7 @@ import {
   desertCardDetails,
   drinkCardDetails,
 } from '../../Constants/appConstants';
+import Footer from '../../Components/Footer';
 import './Home.css';
 
 function Home() {
@@ -113,6 +114,7 @@ function Home() {
         </div>
         <hr className="hrBar" />
       </div>
+      <Footer />
     </>
   );
 }

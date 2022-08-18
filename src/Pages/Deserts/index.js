@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Blog from '../../Components/Blog';
 import { latestDesertsDetails } from '../../Constants/appConstants';
 import '../Blogs/Blogs.css';
 
 function DesertsPage() {
+  useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src =
+      '//pl17568951.highperformancegate.com/5fa170385178a32bef3ed45d5d529520/invoke.js';
+    script.async = true;
+
+    document.body.appendChild(script);
+  }, []);
   return (
     <div className="blogsPageWrapper">
       <div className="blogsPageHeader">
@@ -25,7 +34,7 @@ function DesertsPage() {
           />
         );
       })}
-      <hr className="hrBar" />
+      <div id="container-5fa170385178a32bef3ed45d5d529520"></div>
     </div>
   );
 }

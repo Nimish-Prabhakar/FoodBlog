@@ -38,3 +38,21 @@
   letter-spacing: 3px;
   line-height: 25px;
 }
+
+@media screen and (max-width: 1200px) {
+  .blogPhoto {
+    width: 40%;
+  }
+  .blogIconInfo {
+    width: 55%;
+  }
+  .blogPhotoHeader {
+    font-size: 15px;
+  }
+  .blogPara {
+    width: 70%;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+}

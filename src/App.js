@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar';
-import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import BlogPage from './Pages/Blogs';
 import DesertsPage from './Pages/Deserts';
@@ -40,7 +39,6 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
