@@ -29,7 +29,7 @@ function Home() {
                 fontSize: '1.1rem',
                 height: '70px',
                 width: '280px',
-                '@media screen and (max-width: 1200px)': {
+                '@media screen and (max-width: 900px)': {
                   fontSize: '0.7rem',
                   height: '40px',
                   width: '180px',

@@ -39,7 +39,7 @@
   line-height: 25px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .blogPhoto {
     width: 40%;
   }

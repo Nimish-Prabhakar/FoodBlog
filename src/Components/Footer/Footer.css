@@ -40,7 +40,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .footerContainer {
     margin-top: 0px;
   }
