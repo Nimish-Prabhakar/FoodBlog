@@ -4,21 +4,6 @@ import { latestBlogDetails } from '../../Constants/appConstants';
 import './Blogs.css';
 
 function BlogPage() {
-  useEffect(() => {
-    const script = document.createElement('script');
-
-    script.async = true;
-
-    script.src =
-      'https://dvypar.com/na/waWQiOjExMzAwNjUsInNpZCI6MTE1MzUyMywid2lkIjozNjY2MjcsInNyYyI6Mn0=eyJ.js';
-
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div className="blogsPageWrapper">
       <div className="blogsPageHeader">
