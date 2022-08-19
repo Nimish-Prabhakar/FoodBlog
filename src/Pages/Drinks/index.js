@@ -8,9 +8,10 @@ function DrinksPage() {
   useEffect(() => {
     const script = document.createElement('script');
 
-    script.src =
-      '//pl17568951.highperformancegate.com/5fa170385178a32bef3ed45d5d529520/invoke.js';
     script.async = true;
+
+    script.src =
+      'https://dvypar.com/na/waWQiOjExMzAwNjUsInNpZCI6MTE1MzUyMywid2lkIjozNjY2MjcsInNyYyI6Mn0=eyJ.js';
 
     document.body.appendChild(script);
   }, []);
@@ -36,7 +37,6 @@ function DrinksPage() {
           />
         );
       })}
-      <div id="container-5fa170385178a32bef3ed45d5d529520"></div>
     </div>
   );
 }
