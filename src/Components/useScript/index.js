@@ -9,9 +9,6 @@ const useScript = (url) => {
 
     document.body.appendChild(script);
 
-    // const hrBar = document.getElementById('horizontalBar');
-    // hrBar.insertBefore(script, hrBar);
-
     return () => {
       document.body.removeChild(script);
     };
