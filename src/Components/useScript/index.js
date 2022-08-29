@@ -1,16 +1,20 @@
 import { useEffect } from 'react';
 
-const useScript = (url) => {
+const useScript = (url, reference) => {
   useEffect(() => {
     const script = document.createElement('script');
+
+    const parentDiv = document.getElementById(`${reference}`).parentNode;
+
+    const sp2 = document.getElementById(`${reference}`);
 
     script.src = url;
     script.async = true;
 
-    document.body.appendChild(script);
+    parentDiv.insertBefore(script, sp2);
 
     return () => {
-      document.body.removeChild(script);
+      parentDiv.removeChild(script);
     };
   }, [url]);
 };
