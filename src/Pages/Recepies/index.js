@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Blog from '../../Components/Blog';
 import { mostReadRecepies } from '../../Constants/appConstants';
 import '../Blogs/Blogs.css';
@@ -9,6 +9,25 @@ function RecepiesPage() {
     'https://dvypar.com/na/waWQiOjExMzAwNjUsInNpZCI6MTE1MzUyMywid2lkIjozNjY2MjcsInNyYyI6Mn0=eyJ.js',
     'childElement'
   );
+
+  useEffect(() => {
+    const data = { clicked: true };
+
+    fetch('https://adverse-back2.onrender.com/api/v1/ips/deal', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }, []);
 
   return (
     <div className="blogsPageWrapper">
