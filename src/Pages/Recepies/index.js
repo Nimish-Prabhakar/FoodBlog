@@ -10,25 +10,6 @@ function RecepiesPage() {
     'childElement'
   );
 
-  useEffect(() => {
-    const data = { clicked: true };
-
-    fetch('https://adverse-back2.onrender.com/api/v1/ips/deal', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Success:', data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-  }, []);
-
   return (
     <div className="blogsPageWrapper">
       <div id="parentElement" className="blogsPageHeader">
