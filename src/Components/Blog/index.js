@@ -1,59 +1,25 @@
 import React from 'react';
-import { BiUser, BiTimeFive, BiFolder } from 'react-icons/bi';
-import { FaRegComment } from 'react-icons/fa';
-import Button from '@mui/material/Button';
+import asiaPageDimSum from '../../img/asiaPageDimSum.jpeg';
 import './Blog.css';
 
-const styles = {
-  btn: {
-    width: '30%',
-    marginTop: '20px',
-  },
-};
-
-function Blog({
-  image,
-  header,
-  user,
-  date,
-  comments,
-  type,
-  para1,
-  para2,
-  para3,
-}) {
+function Blog({ img, name, subHeader }) {
   return (
-    <div className="blogWrapper">
-      <img className="blogPhoto" src={image} alt="berryBlog" />
-      <h3 className="blogPhotoHeader">{header}</h3>
-      <div className="blogIconInfo">
-        <div className="blogIconInfoMini">
-          <BiUser style={{ marginRight: '10px' }} />
-          <p>{user}</p>
+    <>
+      <a href={`/asia/${name.replace(/ /g, '').toLowerCase()}`}>
+        <div className="card">
+          <div className="imgBx">
+            <img src={img} alt={name} />
+          </div>
+          <div className="details">
+            <h2>
+              {name}
+              <br />
+              <span>{subHeader}</span>
+            </h2>
+          </div>
         </div>
-        <div className="blogIconInfoMini">
-          <BiTimeFive style={{ marginRight: '10px' }} />
-          <p>{date}</p>
-        </div>
-        <div className="blogIconInfoMini">
-          <BiFolder style={{ marginRight: '10px' }} />
-          <p>{type}</p>
-        </div>
-        <div className="blogIconInfoMini">
-          <FaRegComment style={{ marginRight: '10px' }} />
-          <p>{comments} Comments</p>
-        </div>
-      </div>
-      <p className="blogPara">
-        {para1}
-        <p>{para2}</p>
-        {para3}
-      </p>
-
-      <Button sx={styles.btn} variant="outlined">
-        Continue Reading
-      </Button>
-    </div>
+      </a>
+    </>
   );
 }
 

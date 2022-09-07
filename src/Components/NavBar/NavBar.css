@@ -1,66 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Courgette&family=Edu+TAS+Beginner:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@500;700&family=Gloria+Hallelujah&display=swap');
-
-.NavBarContainer {
-  width: 100vw;
-  height: 10vh;
+.navUpper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.organicBomb {
-  font-family: 'Amatic SC', cursive;
-  font-family: 'Courgette', cursive;
-  font-family: 'Edu TAS Beginner', cursive;
-  font-family: 'Edu VIC WA NT Beginner', cursive;
-  font-family: 'Gloria Hallelujah', cursive;
-  margin-left: 40px;
-  font-size: 35px;
-  margin-top: 60px;
+.logoImg {
+  height: 30vh;
+  margin-left: 120px;
+  cursor: pointer;
 }
 
-.navLinkWrapper {
+.searchFlex {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: -50px;
+  margin-right: 50px;
+}
+
+.iconFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -50px;
+  margin-left: 50px;
+}
+
+.socialIcons {
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
 }
 
 .navLinks {
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 25px;
-  margin-top: 30px;
-  text-decoration: none;
-  color: black;
-}
-
-.search {
-  margin-right: 35px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  margin-top: -25px;
+  margin-bottom: 30px;
 }
 
-.searchInput {
-  padding: 8px;
-  padding-left: 20px;
-  margin-top: 25px;
-  margin-right: 16px;
-  border-radius: 25px;
-  border: 2px solid #80c000;
-  font-size: 17px;
-}
-
-@media screen and (max-width: 900px) {
-  .organicBomb {
-    font-size: 15px;
+@media screen and (max-width: 1280px) {
+  .logoImg {
+    height: 20vh;
+    margin-left: 0px;
   }
-  .navLinks {
-    font-size: 15px;
+  .socialIcons {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
   }
-  .searchInput {
-    font-size: 7px;
+  .searchFlex {
+    margin-right: 0px;
+  }
+  .iconFlex {
+    margin-left: 0px;
+  }
+  .navUpper {
+    justify-content: space-around;
   }
 }

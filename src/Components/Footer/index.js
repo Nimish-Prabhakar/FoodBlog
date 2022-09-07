@@ -1,64 +1,74 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { BsFacebook, BsTwitter } from 'react-icons/bs';
-import { IoLogoWhatsapp, IoMdMail } from 'react-icons/io';
-import { AiFillInstagram } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import logo from '../../img/logo.png';
+import { BsInstagram, BsTwitter, BsFacebook, BsWhatsapp } from 'react-icons/bs';
 import './Footer.css';
 
 function Footer() {
   return (
-    <div className="footerContainer">
-      <p className="organicBombFooter">Number One Meals</p>
-      <div className="footerFirstNav">
-        <NavLink className="footerNavLinks" to="/about">
-          ABOUT US
-        </NavLink>
-        <NavLink className="footerNavLinks" to="/">
-          HOME
-        </NavLink>
-        <NavLink className="footerNavLinks" to="/blog">
-          BLOG
-        </NavLink>
-        <NavLink className="footerNavLinks" to="/reciept">
-          RECIEPT
-        </NavLink>
+    <>
+      <div className="footer">
+        <div className="footerWrapper">
+          <img className="footerLogo" src={logo} alt="logo" />
+          <div className="footerTabs">
+            <p
+              className="footerTab"
+              style={{ fontSize: '25px', fontWeight: 'bold' }}
+            >
+              Meals
+            </p>
+            <Link className="footerTab" to="/asia">
+              Asia
+            </Link>
+            <Link className="footerTab" to="/north-america">
+              North America
+            </Link>
+            <Link className="footerTab" to="/africa">
+              Africa
+            </Link>
+            <Link className="footerTab" to="/south-america">
+              South America
+            </Link>
+            <Link className="footerTab" to="/europe">
+              Europe
+            </Link>
+          </div>
+          <div className="footerTabs">
+            <p
+              className="footerTab"
+              style={{ fontSize: '25px', fontWeight: 'bold' }}
+            >
+              Quick Links
+            </p>
+            <Link className="footerTab" to="/">
+              Home
+            </Link>
+            <Link className="footerTab" to="/about">
+              About Us
+            </Link>
+            <Link className="footerTab" to="/contact">
+              Contact
+            </Link>
+            <Link className="footerTab" to="/privacy-policy">
+              privacy-policy
+            </Link>
+            <Link className="footerTab" to="/terms-condition">
+              Terms And Conditions
+            </Link>
+          </div>
+          <div className="vr"></div>
+          <div className="iconFlex" style={{ margin: 0 }}>
+            <BsInstagram style={{ color: 'white' }} className="socialIcons" />
+            <BsTwitter style={{ color: 'white' }} className="socialIcons" />
+            <BsWhatsapp style={{ color: 'white' }} className="socialIcons" />
+            <BsFacebook style={{ color: 'white' }} className="socialIcons" />
+          </div>
+        </div>
+        <p style={{ color: 'white', alignSelf: 'center' }}>
+          © Copyright 2022. Designed and Developed
+        </p>
       </div>
-      <div className="footerFirstNav">
-        <NavLink className="footerNavLinks" to="/contact">
-          CONTACT
-        </NavLink>
-        <NavLink className="footerNavLinks" to="/">
-          OUR TEAM
-        </NavLink>
-        <NavLink className="footerNavLinks" to="/blog">
-          CONTACT US
-        </NavLink>
-        <NavLink className="footerNavLinks" to="/reciept">
-          PRESS
-        </NavLink>
-      </div>
-      <div className="footerFirstNav">
-        <NavLink className="footerNavLinks" to="/about">
-          PARTNER WITH US
-        </NavLink>
-        <NavLink className="footerNavLinks" to="/privacy-policy">
-          PRIVACY POLICY
-        </NavLink>
-        <NavLink className="footerNavLinks" to="/blog">
-          TERMS OF SERVICE
-        </NavLink>
-        <NavLink className="footerNavLinks" to="/reciept">
-          GET HELP
-        </NavLink>
-      </div>
-      <div>
-        <BsFacebook className="footerIcons" />
-        <BsTwitter className="footerIcons" />
-        <IoLogoWhatsapp className="footerIcons" />
-        <AiFillInstagram className="footerIcons" />
-        <IoMdMail className="footerIcons" />
-      </div>
-    </div>
+    </>
   );
 }
 

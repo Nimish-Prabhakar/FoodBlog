@@ -1,38 +1,41 @@
-import React from 'react';
-import shake from '../../img/shake.jpeg';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import './BlogCard.css';
+import Typography from '@mui/material/Typography';
 
-const styles = {
-  btn: {
-    background: '#80c000',
-    width: '50%',
-    alignSelf: 'flex-start',
-    '@media screen and (max-width: 900px)': {
-      width: '80%',
-    },
-  },
-};
-
-function BlogCard({ image, date, views, header, subHeader }) {
+export default function BasicCard({ img, name, time, origin, para }) {
   return (
-    <div className="blogCardWrapper">
-      <img className="blogImg" src={image} alt="image" />
-      <div className="blogDate">
-        <p style={{ fontSize: '12px' }}>{date}</p>
-        <p style={{ fontSize: '12px' }}>{views}</p>
-      </div>
-      <h3
-        style={{ marginTop: '-5px', display: 'flex', alignSelf: 'flex-start' }}
-      >
-        {header}
-      </h3>
-      <p style={{ fontSize: '15px', marginTop: '-8px' }}>{subHeader}</p>
-      <Button sx={styles.btn} variant="contained">
-        Read More
-      </Button>
-    </div>
+    <Card
+      sx={{
+        maxWidth: '300px',
+        marginBottom: '100px',
+        backgroundColor: '#f8f7f7',
+        borderRadius: '15px',
+      }}
+      raised={true}
+    >
+      <CardMedia component="img" alt="green iguana" height="180" image={img} />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {name}
+        </Typography>
+        <Typography gutterBottom variant="subtitle1" component="div">
+          • Origin : {origin}
+        </Typography>
+        <Typography gutterBottom variant="subtitle1" component="div">
+          • Best Time to Eat : {time}
+        </Typography>
+        <Typography gutterBottom variant="subtitle2" component="div">
+          {para}
+        </Typography>
+      </CardContent>
+      <CardActions sx={{ marginTop: '-10px', marginLeft: '10px' }}>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
   );
 }
-
-export default BlogCard;

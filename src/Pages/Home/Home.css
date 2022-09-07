@@ -1,89 +1,292 @@
-.homeContainer {
-  width: 100vw;
-  height: 320vh;
+.homeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
-.homeUpWrapper {
+.carImages {
+  height: 25vh;
+}
+
+.homeContinent {
   display: flex;
-  flex-direction: row;
-}
-
-.leftHomeSide {
-  width: 30%;
-  margin-top: 100px;
-  margin-left: 100px;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.leftHeader {
-  letter-spacing: 10px;
-  line-height: 50px;
-}
-
-.leftSubHeader {
-  font-weight: 200;
-  margin-top: -10px;
-  line-height: 30px;
-}
-
-.rightHomeSide {
-  width: 70%;
-}
-
-.rightHomeImg {
-  width: 65%;
-  margin-top: 50px;
-  margin-left: 20%;
-}
-
-.latestBlogWrapper {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
 }
 
-.latestBlogs {
-  letter-spacing: 4px;
+.continentsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.blogCardsFlex {
+.contImages {
+  height: 100%;
+  width: 100%;
+}
+
+.contImg {
+  position: relative;
+  height: 35vh;
+  overflow: hidden;
+  width: 30vw;
+  cursor: pointer;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+}
+
+.contImg .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.contImg:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.contImg:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.content-list {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.homeHeaderWrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
-.hrBar {
-  margin-top: 100px;
-  margin-left: 70px;
-  margin-right: 70px;
+.homeHeaderImg {
+  height: 70vh;
 }
 
-@media screen and (max-width: 1200px) {
-  .leftHomeSide {
-    font-size: 8px;
+.homeHeaderContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+
+.homeHeaderSubContent {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.topDishesHome {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contactHome {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentFields {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.continentPageSubHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  margin-top: 50px;
+}
+
+.contHeaderImg {
+  height: 45vh;
+}
+
+.continentPageCardsFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.viewMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.viewMore hr {
+  width: 10%;
+  height: 5px;
+  background-color: black;
+}
+
+.viewMoreContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.SingleMealPageImageCarousel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.carousel-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SingleMealPageContentFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 50px;
+}
+
+.SingleMealPageContentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.SingleMealPageHr {
+  height: 2px;
+  margin-left: 10%;
+  width: 80%;
+  background-color: black;
+}
+
+.contactPageSubHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contactPageLocation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactHomeImg {
+  height: 600px;
+}
+
+.contactHomeSendBtn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 92%;
+  margin-top: 20px;
+}
+
+.vegetablesImg {
+  width: 100vw;
+  height: 200px;
+}
+
+@media screen and (max-width: 1280px) {
+  .carImages {
+    height: 22vh;
   }
-  .leftHeader {
-    letter-spacing: 5px;
-    line-height: 30px;
+  .homeHeaderSubContent {
+    font-size: 15px;
+    line-height: 22px;
   }
-  .leftSubHeader {
-    line-height: 20px;
-    font-size: 12px;
+  .middle {
+    top: 15%;
   }
-  .rightHomeImg {
-    width: 50%;
-    margin-top: 80px;
-    margin-left: 25%;
+  .contImg:hover .content-details {
+    top: 57%;
   }
-  .homeContainer {
-    height: 250vh;
+  .content-list {
+    letter-spacing: 1px;
+  }
+  .contactHomeImg {
+    height: 500px;
+  }
+  .contactHomeSendBtn {
+    width: 98%;
+  }
+  .vegetablesImg {
+    height: 150px;
   }
 }
