@@ -1,9 +1,5 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import asianPageRight from '../../img/asianPageRight.jpeg';
-import asianPageLeft from '../../img/asianPageLeft.jpeg';
 import {
   asianPageDishes1,
   asianPageDishes2,
@@ -14,7 +10,7 @@ import {
 import ViewMoreCard from '../../Components/viewMoreCard';
 import Blog from '../../Components/Blog';
 
-function Europe() {
+function Asia() {
   return (
     <>
       <div className="homeContinent">
@@ -41,10 +37,9 @@ function Europe() {
             region.
           </p>
         </div>
-        <LazyLoadImage
-          effect="blur"
+        <img
           className="contHeaderImg"
-          src={asianPageRight}
+          src="https://lh6.googleusercontent.com/gm3TteFjy6vDf94S2ukNzI56fic7_PttwuBS_Z-qHdKCzWbrWC1raK5WGT2vyO-MWpE=w2400"
           alt="contHeaderImg"
         />
       </div>
@@ -52,10 +47,9 @@ function Europe() {
         className="homeHeaderWrapper"
         style={{ justifyContent: 'space-evenly' }}
       >
-        <LazyLoadImage
-          effect="blur"
+        <img
           className="contHeaderImg"
-          src={asianPageLeft}
+          src="https://lh4.googleusercontent.com/u1_U_v2sYK7LS7si8B4ExwEoO-mFOVEinJrSd5470kcaDfmBsjnoX479rTdjJ-6_Uwc=w2400"
           alt="contHeaderImg"
         />
         <div className="homeHeaderContent">
@@ -134,4 +128,4 @@ function Europe() {
   );
 }
 
-export default Europe;
+export default Asia;

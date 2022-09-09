@@ -1,5 +1,4 @@
 import React from 'react';
-import asiaPageDimSum from '../../img/asiaPageDimSum.jpeg';
 import './Blog.css';
 
 function Blog({ img, name, subHeader }) {

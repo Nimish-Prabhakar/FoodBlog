@@ -1,24 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Button from '@mui/material/Button';
-import Car1 from '../../img/navCar1.jpeg';
-import Car2 from '../../img/navCar2.jpeg';
-import Car3 from '../../img/navCar3.jpeg';
-import Car4 from '../../img/navCar4.jpeg';
-import Car5 from '../../img/navCar5.jpeg';
-import Car6 from '../../img/navCar6.jpeg';
-import Car7 from '../../img/navCar7.jpeg';
-import Car8 from '../../img/navCar8.jpeg';
 import homeWide from '../../img/homwWide.jpeg';
-import homeHeaderLeft from '../../img/homeHeaderLeft.jpeg';
-import asiaHome from '../../img/asiaHome.jpeg';
-import europeHome from '../../img/europeHome.jpeg';
-import africaHome from '../../img/africaHome.jpeg';
-import americaHome from '../../img/americaHome.jpeg';
-import mexicoHome from '../../img/mexicoHome.jpeg';
-import contactHome from '../../img/contactHome.jpeg';
 import Typography from '@mui/material/Typography';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TextField from '@mui/material/TextField';
@@ -77,55 +60,47 @@ function Home() {
   return (
     <>
       <div style={{ marginTop: '100px' }}>
-        <div data-aos="fade-right" className="homeWrapper">
-          <LazyLoadImage
-            effect="blur"
+        <div className="homeWrapper">
+          <img
             className="carImages"
-            src={Car1}
+            src="https://lh6.googleusercontent.com/9aKIEuAwB6DMMxKSTlb8AVqK-5BWjTjoy6CZAUXndZ_eUQ3yi_85bMT6_IeZhCz6ih8=w2400"
             alt="foodImage"
           />
-          <LazyLoadImage
-            effect="blur"
+          <img
             className="carImages"
-            src={Car2}
+            src="https://lh4.googleusercontent.com/p2VVZ7V1nFL3PvDzFaQcjzTj3zD-GGGtmtP_kgOEc2FXV1FM20WY265bGpmL-_8Kdh0=w2400"
             alt="foodImage"
           />
-          <LazyLoadImage
-            effect="blur"
+          <img
             className="carImages"
-            src={Car3}
+            src="https://lh4.googleusercontent.com/pH4pVpyFXATeyV4mUS8CJFXkg0hSnv7qXRBHs95j0gOaYfZSvmmfvZUqelT6sNlIc38=w2400"
             alt="foodImage"
           />
-          <LazyLoadImage
-            effect="blur"
+          <img
             className="carImages"
-            src={Car4}
+            src="https://lh5.googleusercontent.com/LwegPraMbvMoQR8kaNzAMMQCe8883xb4n-mYRUSG8Yjvs4Yfnc6hDEOof3t9BFJOEm8=w2400"
             alt="foodImage"
           />
         </div>
-        <div data-aos="fade-left" className="homeWrapper">
-          <LazyLoadImage
-            effect="blur"
+        <div className="homeWrapper">
+          <img
             className="carImages"
-            src={Car5}
+            src="https://lh6.googleusercontent.com/exTolAIIRXefe7wjwbHLwyY1Iwh62QuRgoe3ciMzibrwbnP5x0M7_xStrQJQ2Dsbzts=w2400"
             alt="foodImage"
           />
-          <LazyLoadImage
-            effect="blur"
+          <img
             className="carImages"
-            src={Car6}
+            src="https://lh3.googleusercontent.com/j38ScpYDPLTPzCZ3iiefbWbuPjAgbo6C63XEMTeRnfwLCS0twRd_YBy0snmlg_M_qSw=w2400"
             alt="foodImage"
           />
-          <LazyLoadImage
-            effect="blur"
+          <img
             className="carImages"
-            src={Car7}
+            src="https://lh3.googleusercontent.com/papCgXUyyuasSETepTIhiRIk8hneEeYUPf5RiGMmCjVwandXihpkuWNVVIOxDczraM4=w2400"
             alt="foodImage"
           />
-          <LazyLoadImage
-            effect="blur"
+          <img
             className="carImages"
-            src={Car8}
+            src="https://lh4.googleusercontent.com/e7mtvoimtYeRcZZRGeVExRF4W8_0-ORR9j0nTm4MsoSOjxLqxbC1nYJcxDlANP2zNkY=w2400"
             alt="foodImage"
           />
         </div>
@@ -136,7 +111,7 @@ function Home() {
         </Typography>
       </div>
       <div className="homeHeaderWrapper">
-        <div data-aos="fade-right" className="homeHeaderContent">
+        <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
             These blogs are for anyone who loves to cook and for everyone who
             doesn’t.
@@ -164,11 +139,10 @@ function Home() {
             Learn more about us --&gt;
           </Button>
         </div>
-        <div data-aos="fade-left">
-          <LazyLoadImage
-            effect="blur"
+        <div>
+          <img
             className="homeHeaderImg"
-            src={homeHeaderLeft}
+            src="https://lh5.googleusercontent.com/ixR8aP5vJ85n5xyuRqkadPU9Eovo9JwHqPR1SXWlOwtvkqiNsUD8dLFb8WBdpW7DUVM=w2400"
             alt="homeHeaderImg"
           />
         </div>
@@ -186,12 +160,13 @@ function Home() {
         <div className="contImg">
           <a href="/asia">
             <div className="content-overlay"></div>
+
             <img
               className="contImages"
-              src={asiaHome}
+              src="https://lh5.googleusercontent.com/aMP2-Y7huc-kB2ogfqIDuefVsMHQCNPFxT_OM9NL2iZiq5LuZFovKmOJqnt8o8dRyPQ=w2400"
               alt="foodImage"
-              loading="lazy"
             />
+
             <div className="middle">
               <Typography sx={styles.contCardContent} variant="h5" gutterBottom>
                 Asia
@@ -217,11 +192,11 @@ function Home() {
         <div className="contImg">
           <a href="/north-america">
             <div className="content-overlay"></div>
+
             <img
               className="contImages"
-              src={americaHome}
+              src="https://lh4.googleusercontent.com/J7U4o9HlldOixpZ_jcroha3qT-eEK6uo1H6l_FfhQrj6x9_sFIy9a1mOSSeG1LAftQ4=w2400"
               alt="foodImage"
-              loading="lazy"
             />
             <div className="middle" style={{ left: '40%' }}>
               <Typography sx={styles.contCardContent} variant="h5" gutterBottom>
@@ -249,9 +224,10 @@ function Home() {
         <div className="contImg">
           <a href="/africa">
             <div className="content-overlay"></div>
+
             <img
               className="contImages"
-              src={africaHome}
+              src="https://lh4.googleusercontent.com/thOAyhFQUuhLUMBXNuukK9TMog5SbNcj-qAHWC3uOXruT0U-53rlGREMdpaAQrItoiQ=w2400"
               alt="foodImage"
               loading="lazy"
             />
@@ -288,11 +264,11 @@ function Home() {
         <div className="contImg">
           <a href="/south-america">
             <div className="content-overlay"></div>
+
             <img
               className="contImages"
-              src={mexicoHome}
+              src="https://lh3.googleusercontent.com/VLD7StzDlmycQaCcBFY48lQUnaeOx8IvRnbdv4tPVnAEyZTad_7IvzMKZRNyE5gvh90=w2400"
               alt="foodImage"
-              loading="lazy"
             />
             <div className="middle" style={{ left: '35%' }}>
               <Typography sx={styles.contCardContent} variant="h5" gutterBottom>
@@ -320,11 +296,11 @@ function Home() {
         <div className="contImg">
           <a href="/europe">
             <div className="content-overlay"></div>
+
             <img
               className="contImages"
-              src={europeHome}
+              src="https://lh3.googleusercontent.com/CfNlv9vxeHsDR3vygDGCyDQUaZTW_OcJiUXd7jd5XVgwxu1O6Z2KkspwgS9Hd_YGs_c=w2400"
               alt="foodImage"
-              loading="lazy"
             />
             <div className="middle">
               <Typography sx={styles.contCardContent} variant="h5" gutterBottom>
@@ -405,6 +381,7 @@ function Home() {
           );
         })}
       </div>
+
       <img className="vegetablesImg" src={homeWide} alt="homeWide" />
       <div className="homeContinent">
         <Typography
@@ -464,7 +441,11 @@ function Home() {
             <Button variant="outlined">Send Now</Button>
           </div>
         </div>
-        <img className="contactHomeImg" src={contactHome} alt="</div>" />
+        <img
+          className="contactHomeImg"
+          src="https://lh3.googleusercontent.com/BJTfv6hHErEgUQpTeT4SOyd6D3X0VntSL3huOhBdrfBL_sN5dvC1UVdtcqpzUR-uMKc=w2400"
+          alt="contactHomeImg"
+        />
       </div>
     </>
   );

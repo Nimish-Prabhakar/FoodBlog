@@ -1,7 +1,5 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import naPageRight from '../../img/naPageRight.jpeg';
 import naPageLeft from '../../img/naPageLeft.jpeg';
 import {
@@ -41,23 +39,13 @@ function NorthAmerica() {
             cuisines.
           </p>
         </div>
-        <LazyLoadImage
-          effect="blur"
-          className="contHeaderImg"
-          src={naPageRight}
-          alt="contHeaderImg"
-        />
+        <img className="contHeaderImg" src={naPageRight} alt="contHeaderImg" />
       </div>
       <div
         className="homeHeaderWrapper"
         style={{ justifyContent: 'space-evenly' }}
       >
-        <LazyLoadImage
-          effect="blur"
-          className="contHeaderImg"
-          src={naPageLeft}
-          alt="contHeaderImg"
-        />
+        <img className="contHeaderImg" src={naPageLeft} alt="contHeaderImg" />
         <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
             North American cuisine first originated with the settlement of the
