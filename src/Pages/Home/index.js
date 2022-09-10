@@ -11,6 +11,8 @@ import {
   homePageMeals2,
   homePageMeals3,
 } from '../..//Constants/appConstants';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Home.css';
 
 const styles = {
@@ -61,45 +63,53 @@ function Home() {
     <>
       <div style={{ marginTop: '100px' }}>
         <div className="homeWrapper">
-          <img
+          <LazyLoadImage
             className="carImages"
+            effect="blur"
             src="https://lh6.googleusercontent.com/9aKIEuAwB6DMMxKSTlb8AVqK-5BWjTjoy6CZAUXndZ_eUQ3yi_85bMT6_IeZhCz6ih8=w2400"
             alt="foodImage"
           />
-          <img
+          <LazyLoadImage
             className="carImages"
+            effect="blur"
             src="https://lh4.googleusercontent.com/p2VVZ7V1nFL3PvDzFaQcjzTj3zD-GGGtmtP_kgOEc2FXV1FM20WY265bGpmL-_8Kdh0=w2400"
             alt="foodImage"
           />
-          <img
+          <LazyLoadImage
             className="carImages"
+            effect="blur"
             src="https://lh4.googleusercontent.com/pH4pVpyFXATeyV4mUS8CJFXkg0hSnv7qXRBHs95j0gOaYfZSvmmfvZUqelT6sNlIc38=w2400"
             alt="foodImage"
           />
-          <img
+          <LazyLoadImage
             className="carImages"
+            effect="blur"
             src="https://lh5.googleusercontent.com/LwegPraMbvMoQR8kaNzAMMQCe8883xb4n-mYRUSG8Yjvs4Yfnc6hDEOof3t9BFJOEm8=w2400"
             alt="foodImage"
           />
         </div>
         <div className="homeWrapper">
-          <img
+          <LazyLoadImage
             className="carImages"
+            effect="blur"
             src="https://lh6.googleusercontent.com/exTolAIIRXefe7wjwbHLwyY1Iwh62QuRgoe3ciMzibrwbnP5x0M7_xStrQJQ2Dsbzts=w2400"
             alt="foodImage"
           />
-          <img
+          <LazyLoadImage
             className="carImages"
+            effect="blur"
             src="https://lh3.googleusercontent.com/j38ScpYDPLTPzCZ3iiefbWbuPjAgbo6C63XEMTeRnfwLCS0twRd_YBy0snmlg_M_qSw=w2400"
             alt="foodImage"
           />
-          <img
+          <LazyLoadImage
             className="carImages"
+            effect="blur"
             src="https://lh3.googleusercontent.com/papCgXUyyuasSETepTIhiRIk8hneEeYUPf5RiGMmCjVwandXihpkuWNVVIOxDczraM4=w2400"
             alt="foodImage"
           />
-          <img
+          <LazyLoadImage
             className="carImages"
+            effect="blur"
             src="https://lh4.googleusercontent.com/e7mtvoimtYeRcZZRGeVExRF4W8_0-ORR9j0nTm4MsoSOjxLqxbC1nYJcxDlANP2zNkY=w2400"
             alt="foodImage"
           />
@@ -140,7 +150,8 @@ function Home() {
           </Button>
         </div>
         <div>
-          <img
+          <LazyLoadImage
+            effect="blur"
             className="homeHeaderImg"
             src="https://lh5.googleusercontent.com/ixR8aP5vJ85n5xyuRqkadPU9Eovo9JwHqPR1SXWlOwtvkqiNsUD8dLFb8WBdpW7DUVM=w2400"
             alt="homeHeaderImg"
@@ -160,13 +171,11 @@ function Home() {
         <div className="contImg">
           <a href="/asia">
             <div className="content-overlay"></div>
-
             <img
               className="contImages"
               src="https://lh5.googleusercontent.com/aMP2-Y7huc-kB2ogfqIDuefVsMHQCNPFxT_OM9NL2iZiq5LuZFovKmOJqnt8o8dRyPQ=w2400"
               alt="foodImage"
             />
-
             <div className="middle">
               <Typography sx={styles.contCardContent} variant="h5" gutterBottom>
                 Asia
@@ -441,7 +450,8 @@ function Home() {
             <Button variant="outlined">Send Now</Button>
           </div>
         </div>
-        <img
+        <LazyLoadImage
+          effect="blur"
           className="contactHomeImg"
           src="https://lh3.googleusercontent.com/BJTfv6hHErEgUQpTeT4SOyd6D3X0VntSL3huOhBdrfBL_sN5dvC1UVdtcqpzUR-uMKc=w2400"
           alt="contactHomeImg"

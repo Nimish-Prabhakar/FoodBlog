@@ -6,6 +6,8 @@ import Flag from 'react-world-flags';
 import { viewMoreAsia1, viewMoreAsia2 } from '../../Constants/appConstants';
 import ViewMoreCard from '../../Components/viewMoreCard';
 import CircularProgress from '@mui/material/CircularProgress';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function SingleMealPage() {
   const [fetchedData, setFetchedData] = useState({ images: [] });
@@ -42,7 +44,12 @@ function SingleMealPage() {
             >
               {fetchedData.images.map((img) => {
                 return (
-                  <img src={img} alt="img" style={{ maxHeight: '550px' }} />
+                  <img
+                    loading="lazy"
+                    src={img}
+                    alt="img"
+                    style={{ maxHeight: '550px' }}
+                  />
                 );
               })}
             </Carousel>

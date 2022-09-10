@@ -1,7 +1,5 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import naPageRight from '../../img/naPageRight.jpeg';
-import naPageLeft from '../../img/naPageLeft.jpeg';
 import {
   naPageDishes1,
   naPageDishes2,
@@ -39,13 +37,21 @@ function NorthAmerica() {
             cuisines.
           </p>
         </div>
-        <img className="contHeaderImg" src={naPageRight} alt="contHeaderImg" />
+        <img
+          className="contHeaderImg"
+          src="https://lh5.googleusercontent.com/alziA58QU6KbkYEZroG1PeWjVojELzQYNz8aQfq1o0JE0PitQIEnIWv-PRaLl-kaz50=w2400"
+          alt="contHeaderImg"
+        />
       </div>
       <div
         className="homeHeaderWrapper"
         style={{ justifyContent: 'space-evenly' }}
       >
-        <img className="contHeaderImg" src={naPageLeft} alt="contHeaderImg" />
+        <img
+          className="contHeaderImg"
+          src="https://lh3.googleusercontent.com/CTT0I3Z72TA0MQdtqtCxiIMG-XydHbAWb1JFSxuw5qa_c_aARUMqeyjUS7NtY-ajUQ0=w2400"
+          alt="contHeaderImg"
+        />
         <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
             North American cuisine first originated with the settlement of the

@@ -8,6 +8,8 @@ import {
   viewMoreAsia2,
 } from '../../Constants/appConstants';
 import ViewMoreCard from '../../Components/viewMoreCard';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Blog from '../../Components/Blog';
 
 function Asia() {
@@ -37,7 +39,8 @@ function Asia() {
             region.
           </p>
         </div>
-        <img
+        <LazyLoadImage
+          effect="blur"
           className="contHeaderImg"
           src="https://lh6.googleusercontent.com/gm3TteFjy6vDf94S2ukNzI56fic7_PttwuBS_Z-qHdKCzWbrWC1raK5WGT2vyO-MWpE=w2400"
           alt="contHeaderImg"
@@ -47,7 +50,8 @@ function Asia() {
         className="homeHeaderWrapper"
         style={{ justifyContent: 'space-evenly' }}
       >
-        <img
+        <LazyLoadImage
+          effect="blur"
           className="contHeaderImg"
           src="https://lh4.googleusercontent.com/u1_U_v2sYK7LS7si8B4ExwEoO-mFOVEinJrSd5470kcaDfmBsjnoX479rTdjJ-6_Uwc=w2400"
           alt="contHeaderImg"

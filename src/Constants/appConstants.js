@@ -1,13 +1,3 @@
-import naPageBrownies from '../img/naPageBrownies.jpeg';
-import naPageMacCheese from '../img/naPageMacCheese.jpeg';
-import naPageBuffaloWings from '../img/naPageBuffaloWings.jpeg';
-import naPageBarbecue from '../img/naPageBarbecue.jpeg';
-import naPageCheeseBurger from '../img/naPageCheeseBurger.jpeg';
-import naPageCupCake from '../img/naPageCupCake.jpeg';
-import naPageLobster from '../img/naPageLobster.jpeg';
-import naPageSurfTurf from '../img/naPageSurfTurf.jpeg';
-import naPageCrabCake from '../img/naPageCrabCake.jpeg';
-
 export const homePageMeals1 = [
   {
     name: 'Dim Sum',
@@ -176,17 +166,17 @@ export const viewMoreAsia2 = [
 export const naPageDishes1 = [
   {
     name: 'Buffalo Wings',
-    img: `${naPageBuffaloWings}`,
+    img: 'https://lh5.googleusercontent.com/iTtChvcTFb4Iq_B84Guqzye3Zqf08cKCBsxUtz8_z-p6JJEDNHdBKl7yHk_9AJCA38g=w2400',
     subHeader: 'Chicken wings dipped in sauce',
   },
   {
     name: 'Mac And Cheese',
-    img: `${naPageMacCheese}`,
+    img: 'https://lh5.googleusercontent.com/KBacrIZtqQQHnqPx2DHR54tlJL-uGZ7Cvur9-wf9wL4fFZZb69OSqCnMhofjTsQX8PM=w2400',
     subHeader: 'Mix of Macaroni and melted cheese',
   },
   {
     name: 'Brownies',
-    img: `${naPageBrownies}`,
+    img: 'https://lh4.googleusercontent.com/cejQo5W0Zty2_Cf3lmmahAO8EB7y_2k8Dh-nGmlwUP2eBHrZ5qPSOXPk5ggHEsWt428=w2400',
     subHeader: 'Deliciously dense chocolate cake',
   },
 ];
@@ -194,17 +184,17 @@ export const naPageDishes1 = [
 export const naPageDishes2 = [
   {
     name: 'Cupcake',
-    img: `${naPageCupCake}`,
+    img: 'https://lh6.googleusercontent.com/s5HxZnOqnicPir03bhxPshf4oi0HMpp5R__2NU0RHqqcenNdpKxovHhLm23lQE1Qwo4=w2400',
     subHeader: 'Tiny cake baked in paper',
   },
   {
     name: 'Barbecue',
-    img: `${naPageBarbecue}`,
+    img: 'https://lh5.googleusercontent.com/kXFD1YgsvOzrlz8mU2KeIqMansCWCt2iKla5d_RDEJq6ddsWSamUYoLhQKm5Rmm3Fl8=w2400',
     subHeader: 'Smoke-cooking meat',
   },
   {
     name: 'Cheeseburger',
-    img: `${naPageCheeseBurger}`,
+    img: 'https://lh4.googleusercontent.com/lVPzT7EMDV35VEdUGzAn2oHBiu-scL3gllXlPtMzeVkYjSzi6I6wgIwYbH5M6wKeiEA=w2400',
     subHeader: 'Slice of cheese in burger',
   },
 ];
@@ -212,17 +202,17 @@ export const naPageDishes2 = [
 export const naPageDishes3 = [
   {
     name: 'Surf and Turf',
-    img: `${naPageSurfTurf}`,
+    img: 'https://lh4.googleusercontent.com/99JN6Ao7NPDNIM3_DGECOLvMTukzTOW1re32r9pHOAWUrNfNKtyF2yXYTzksfcayEDM=w2400',
     subHeader: 'Mix of meat and seafood',
   },
   {
     name: 'Maine Lobster',
-    img: `${naPageLobster}`,
+    img: 'https://lh5.googleusercontent.com/BUT_UysfOKln1TtA97mfV0jO0vag1zL8jZJ7i3cPHEKp22No5StH33k1fQM01xI0B3M=w2400',
     subHeader: 'Not your typical lobster',
   },
   {
     name: 'Crab Cake',
-    img: `${naPageCrabCake}`,
+    img: 'https://lh6.googleusercontent.com/3dneTX933PsY-e8tLzpyn5KAMo67qm50w87Caum6rJKxxhfqevAEdrZWF-56aJrv7cs=w2400',
     subHeader: 'Fishcake with shellfish meat',
   },
 ];

@@ -1,17 +1,105 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
-import contactPage from '../../img/contactPage.jpeg';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { IoLocationSharp, IoMail } from 'react-icons/io5';
+import CircularProgress from '@mui/material/CircularProgress';
+import Alert from '@mui/material/Alert';
 
 const styles = {
   textField: {
     width: '750px',
+    marginBottom: '40px',
   },
 };
 
 function Contact() {
+  const [formField, setFormField] = useState({
+    first_name: '',
+    last_name: '',
+    user_email: '',
+    message: '',
+  });
+
+  const [responseFetched, setResponseFetched] = useState(false);
+  const [emailConfirmed, setEmailConfirmed] = useState(false);
+  const [responseStatus, setResponseStatus] = useState(0);
+  const [emptyError, setEmptyError] = useState(false);
+
+  const onChangeHandler = (e) => {
+    e.preventDefault();
+
+    setFormField((prev) => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value,
+      };
+    });
+  };
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    if (
+      formField.first_name === '' ||
+      formField.last_name === '' ||
+      formField.message === '' ||
+      formField.user_email === ''
+    ) {
+      setEmptyError(true);
+      return;
+    } else {
+      setEmptyError(false);
+    }
+    setResponseFetched(true);
+    sendEmailService();
+  };
+
+  useEffect(() => {
+    if (responseStatus === 200) {
+      setResponseFetched(false);
+      setEmailConfirmed(true);
+      setFormField({
+        first_name: '',
+        last_name: '',
+        user_email: '',
+        message: '',
+      });
+      setTimeout(() => {
+        setEmailConfirmed(false);
+      }, 3000);
+    }
+  }, [responseStatus]);
+
+  const sendEmailService = async () => {
+    try {
+      const response = await fetch(
+        'https://api.emailjs.com/api/v1.0/email/send',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            service_id: 'service_4fuh61s',
+            template_id: 'template_qn7p41u',
+            user_id: 'CQNOp2_qYjDM7ax1L',
+            template_params: {
+              first_name: formField.first_name,
+              last_name: formField.last_name,
+              user_email: formField.user_email,
+              message: formField.message,
+            },
+          }),
+        }
+      );
+      const json = await response.json();
+      return { json };
+    } catch (err) {
+      setResponseStatus(200);
+      throw err;
+    }
+  };
+
   return (
     <>
       <div className="homeContinent">
@@ -65,39 +153,46 @@ function Contact() {
             We value any comments or feedback, so if you would like to get in
             touch with us we would love to hear from you.
           </Typography>
+
           <div className="contentFields">
             <TextField
               sx={{ width: '350px' }}
               id="outlined-basic"
               label="First Name"
+              name="first_name"
               variant="outlined"
+              value={formField.first_name}
+              onChange={onChangeHandler}
             />
             <TextField
               sx={{ width: '350px' }}
               id="outlined-basic"
               label="Last Name"
+              name="last_name"
               variant="outlined"
+              value={formField.last_name}
+              onChange={onChangeHandler}
             />
           </div>
-          <div className="contentFields">
-            <TextField
-              sx={{ width: '350px' }}
-              id="outlined-basic"
-              label="Mobile"
-              variant="outlined"
-            />
-            <TextField
-              sx={{ width: '350px' }}
-              id="outlined-basic"
-              label="Email Address"
-              variant="outlined"
-            />
-          </div>
+
+          <TextField
+            sx={styles.textField}
+            id="outlined-basic"
+            label="Email Address"
+            name="user_email"
+            variant="outlined"
+            value={formField.user_email}
+            onChange={onChangeHandler}
+          />
+
           <TextField
             sx={styles.textField}
             id="outlined-basic"
             label="Message"
+            name="message"
             variant="outlined"
+            value={formField.message}
+            onChange={onChangeHandler}
             multiline
           />
           <div
@@ -106,16 +201,34 @@ function Contact() {
               justifyContent: 'flex-start',
               alignItems: 'center',
               width: '92%',
-              marginTop: '20px',
             }}
           >
-            <Button variant="outlined">Send Now</Button>
+            {responseFetched && (
+              <div className="circularProgressContact">
+                <CircularProgress size={100} color="success" />
+              </div>
+            )}
+            <Button onClick={onSubmitHandler} type="submit" variant="outlined">
+              Send Now
+            </Button>
+            {emailConfirmed && (
+              <Alert sx={{ marginLeft: '50px' }} severity="success">
+                Your message has been successfully sent. We'll get back to you
+                shortly.
+              </Alert>
+            )}
+            {emptyError && (
+              <Alert sx={{ marginLeft: '50px' }} severity="error">
+                Please enter all fields before sending your message
+              </Alert>
+            )}
           </div>
         </div>
+
         <img
           style={{ height: '600px' }}
-          src="https://lh3.googleusercontent.com/A8GYWEzlaX-MYIK098W44DaJ1hlbpwiqlrwSv48po0hKDvBnyfx4U6KC_8yzLU7mw5U=w2400"
-          alt="</div>"
+          src="https://lh4.googleusercontent.com/GTzCEe6nlBWfRnTdaJomRE6hcCfENr_PKYRFeYREvZKbz5io403q4nbcjMxDq3kUj0E=w2400"
+          alt="contactImage"
         />
       </div>
     </>
