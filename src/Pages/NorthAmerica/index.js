@@ -75,21 +75,36 @@ function NorthAmerica() {
       <div className="continentPageCardsFlex">
         {naPageDishes1.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="northAmerica"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>
       <div className="continentPageCardsFlex">
         {naPageDishes2.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="northAmerica"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>
       <div className="continentPageCardsFlex">
         {naPageDishes3.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="northAmerica"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>

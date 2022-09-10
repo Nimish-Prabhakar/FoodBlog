@@ -24,7 +24,7 @@ function App() {
           <Route path="/europe" element={<Europe />} />
           <Route path="/north-america" element={<NorthAmerica />} />
           <Route path="/south-america" element={<SouthAmerica />} />
-          <Route path="/asia/:id" element={<SingleMealPage />} />
+          <Route path="/:continent/:meal" element={<SingleMealPage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

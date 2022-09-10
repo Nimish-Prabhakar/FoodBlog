@@ -1,10 +1,10 @@
 import React from 'react';
 import './Blog.css';
 
-function Blog({ img, name, subHeader }) {
+function Blog({ continent, img, name, subHeader }) {
   return (
     <>
-      <a href={`/asia/${name.replace(/ /g, '').toLowerCase()}`}>
+      <a href={`/${continent}/${name.replace(/ /g, '').toLowerCase()}`}>
         <div className="card">
           <div className="imgBx">
             <img src={img} alt={name} />

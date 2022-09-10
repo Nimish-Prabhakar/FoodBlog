@@ -80,21 +80,36 @@ function Asia() {
       <div className="continentPageCardsFlex">
         {asianPageDishes1.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="asia"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>
       <div className="continentPageCardsFlex">
         {asianPageDishes2.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="asia"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>
       <div className="continentPageCardsFlex">
         {asianPageDishes3.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="asia"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>

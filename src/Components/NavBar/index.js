@@ -55,7 +55,10 @@ function NavBar() {
     let currentTab = window.location.href;
     if (currentTab.includes('asia')) {
       setValue(1);
-    } else if (currentTab.includes('north-america')) {
+    } else if (
+      currentTab.includes('north-america') ||
+      currentTab.includes('northAmerica')
+    ) {
       setValue(2);
     } else if (currentTab.includes('south-america')) {
       setValue(3);
