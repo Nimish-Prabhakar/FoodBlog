@@ -1,9 +1,8 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import {
-  asianPageDishes1,
-  asianPageDishes2,
-  asianPageDishes3,
+  africaPageDishes1,
+  africaPageDishes2,
   viewMoreAsia1,
   viewMoreAsia2,
 } from '../../Constants/appConstants';
@@ -15,7 +14,7 @@ function Asia() {
     <>
       <div className="homeContinent">
         <Typography sx={{ letterSpacing: '10px' }} variant="h3" gutterBottom>
-          Asian Cuisine
+          African Cuisine
         </Typography>
       </div>
       <div
@@ -24,22 +23,22 @@ function Asia() {
       >
         <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
-            When we think of Asian cuisine, we think of dishes that are exotic,
-            delicious, and rich in flavors and spices.
+            The roots of African cuisine goes back thousands of years to the
+            Bronze Age in Northeast Africa, when early civilisations began
+            cultivating grains such as barley and wheat.
           </p>
           <p className="homeHeaderSubContent">
-            Asia, being the world’s biggest and most populous continent, is home
-            to a diverse range of cultures, each with its own distinct cuisine.
+            Traditionally, the various cuisines of Africa use a combination of
+            plant and seed based, and do not usually have food imported.
           </p>
           <p className="homeHeaderSubContent">
-            Rice is a staple starch in almost all Asian dietary cultures.
-            Different types of rice are popular in different parts of the
-            region.
+            In some parts of the continent, the traditional diet features an
+            abundance of root tuber products
           </p>
         </div>
         <img
           className="contHeaderImg"
-          src="https://lh6.googleusercontent.com/gm3TteFjy6vDf94S2ukNzI56fic7_PttwuBS_Z-qHdKCzWbrWC1raK5WGT2vyO-MWpE=w2400"
+          src="https://lh5.googleusercontent.com/Pov5QM8OmAHBruPkNqI7PicrSLdU816lPhYxpKdUDJQyBXQUQjxxU_VW0kaIhP7JiOE=w2400"
           alt="contHeaderImg"
         />
       </div>
@@ -49,48 +48,54 @@ function Asia() {
       >
         <img
           className="contHeaderImg"
-          src="https://lh4.googleusercontent.com/u1_U_v2sYK7LS7si8B4ExwEoO-mFOVEinJrSd5470kcaDfmBsjnoX479rTdjJ-6_Uwc=w2400"
+          src="https://lh3.googleusercontent.com/9_LUE-gkfroRmfsyDu0R3zaIxnTePANITuy2bBxguMpB-D_1dy8ANPXDAXtn2U7j6QU=w2400"
           alt="contHeaderImg"
         />
         <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
-            Asian cuisine evolution did not happen by itself. It occurred due to
-            European colonies migrating to the northeast and southwest.
+            Central Africa, East Africa, North Africa, Southern Africa and West
+            Africa each have distinctive dishes, preparation techniques, and
+            consumption mores.
           </p>
           <p className="homeHeaderSubContent">
-            Vietnam, Laos, and Cambodia, for instance, were under French
-            colonies.Malaysia was under the British colony, whereas Indonesia
-            was ruled by the Dutch colony.
+            The influence of African foodways on Caribbean, Brazilian and
+            American Lowcountry cuisine, and Cajun cuisine from Louisiana is
+            seen in rice dishes and green stews like the Afro-Caribbean efo,
+            duckanoo and calaloo.
           </p>
           <p className="homeHeaderSubContent">
-            It all ended up enhancing the original southeast cuisine, and
-            introducing additional components that are now part Asian cuisine.
+            With their distinctive taste and features African cuisine has maade
+            its way acroos the world and now is famous among many big
+            restaurants.
           </p>
         </div>
       </div>
       <div className="homeContinent" style={{ marginBottom: '40px' }}>
         <Typography sx={{ letterSpacing: '5px' }} variant="h5" gutterBottom>
-          Some of the most famous cuisines from the subcontinent of Asia
+          Some of the most famous cuisines from the subcontinent of Africa
         </Typography>
       </div>
       <div className="continentPageCardsFlex">
-        {asianPageDishes1.map((val) => {
+        {africaPageDishes1.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="africa"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>
       <div className="continentPageCardsFlex">
-        {asianPageDishes2.map((val) => {
+        {africaPageDishes2.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
-          );
-        })}
-      </div>
-      <div className="continentPageCardsFlex">
-        {asianPageDishes3.map((val) => {
-          return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="africa"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>

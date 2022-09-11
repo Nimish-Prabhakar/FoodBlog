@@ -216,3 +216,39 @@ export const naPageDishes3 = [
     subHeader: 'Fishcake with shellfish meat',
   },
 ];
+
+export const africaPageDishes1 = [
+  {
+    name: 'Braai',
+    img: 'https://lh6.googleusercontent.com/fGboWdwO_Jmqk2ZE-Nk_wXpjGamQmxiLCdAoSaGS8m_B7EhED9Eb7XchXS15eA1eM50=w2400',
+    subHeader: 'African style barbecue',
+  },
+  {
+    name: 'Tajine',
+    img: 'https://lh3.googleusercontent.com/M_svt-zAvALrx_f5aKFI_WKY6oJpGsngMXDKbUNRDjDzw0c13pUm-Ez7_6gJrUEudkQ=w2400',
+    subHeader: 'Stew and cooking vessel',
+  },
+  {
+    name: 'Couscous',
+    img: 'https://lh5.googleusercontent.com/g6gzG589_kNAyi2uCD-MO3kEoRSZ_p3gU1crOVeYhVZR6yDewMj1WgYwxbuxcBkoc1s=w2400',
+    subHeader: 'Tiny, light, tender grains',
+  },
+];
+
+export const africaPageDishes2 = [
+  {
+    name: 'Tameya',
+    img: 'https://lh6.googleusercontent.com/48pGuThnt7aIzXwMIqImCRwAl6h0uDEE8-7uTW1thPNz7tFZG9MzHSgQlyscqb69EXM=w2400',
+    subHeader: 'Protein-packed chickpea fritters',
+  },
+  {
+    name: 'Pastilla',
+    img: 'https://lh5.googleusercontent.com/QjctnpvGByE3jNJAdKAARFbh_8Oo8V1_NwGCMoR6iaz4J8I5oaKPpuYSan6SiwIutQ0=w2400',
+    subHeader: 'Stuffed pastry from Morocco',
+  },
+  {
+    name: 'Wat',
+    img: 'https://lh5.googleusercontent.com/JiXoKm-I3isl8yyojegWNvga8hq-10Z8lSuJXbQ716ZYbl-awL_CJ9hTVX4SICGbVzQ=w2400',
+    subHeader: 'A spicy stew made with berbere',
+  },
+];

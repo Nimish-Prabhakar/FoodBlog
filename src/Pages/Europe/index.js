@@ -15,7 +15,7 @@ function Asia() {
     <>
       <div className="homeContinent">
         <Typography sx={{ letterSpacing: '10px' }} variant="h3" gutterBottom>
-          Asian Cuisine
+          European Cuisine
         </Typography>
       </div>
       <div
