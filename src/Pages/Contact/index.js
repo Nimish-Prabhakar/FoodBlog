@@ -14,6 +14,10 @@ const styles = {
 };
 
 function Contact() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [formField, setFormField] = useState({
     first_name: '',
     last_name: '',

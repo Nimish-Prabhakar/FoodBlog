@@ -5,6 +5,10 @@ import React from 'react';
 function Error404() {
   const navigate = useNavigate();
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="errorWrapper">
       <img

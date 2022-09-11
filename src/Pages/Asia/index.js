@@ -13,6 +13,10 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Blog from '../../Components/Blog';
 
 function Asia() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="homeContinent">

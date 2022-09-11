@@ -11,6 +11,10 @@ import ViewMoreCard from '../../Components/viewMoreCard';
 import Blog from '../../Components/Blog';
 
 function NorthAmerica() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="homeContinent">

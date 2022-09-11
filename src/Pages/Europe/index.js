@@ -9,7 +9,11 @@ import {
 import ViewMoreCard from '../../Components/viewMoreCard';
 import Blog from '../../Components/Blog';
 
-function Asia() {
+function Europe() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="homeContinent">
@@ -136,4 +140,4 @@ function Asia() {
   );
 }
 
-export default Asia;
+export default Europe;

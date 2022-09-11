@@ -284,7 +284,7 @@ export const europePageDishes2 = [
   {
     name: 'Ajvar',
     img: 'https://lh4.googleusercontent.com/VpkzFtlr7WkxBMQlSzW3aQZKHvwo5sehaIo6r6WZflVd4SEJ3iePu2BtQnvcL1x0KDc=w2400',
-    subHeader: 'traditional peppers-and-eggplant relish',
+    subHeader: 'peppers-and-eggplant relish',
   },
   {
     name: 'Pastel De Belem',

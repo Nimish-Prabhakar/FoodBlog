@@ -2,6 +2,10 @@ import { Typography } from '@mui/material';
 import React from 'react';
 
 function AboutUs() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="homeContinent">
