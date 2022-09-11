@@ -6,10 +6,12 @@ import Flag from 'react-world-flags';
 import { viewMoreAsia1, viewMoreAsia2 } from '../../Constants/appConstants';
 import ViewMoreCard from '../../Components/viewMoreCard';
 import CircularProgress from '@mui/material/CircularProgress';
+import { useNavigate } from 'react-router-dom';
 
 function SingleMealPage() {
   const [fetchedData, setFetchedData] = useState({ images: [] });
   const [responseFetched, setResponseFetched] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     let dish = window.location.pathname.split('/').pop();
@@ -19,7 +21,13 @@ function SingleMealPage() {
       `https://karkhana-studio-backend.onrender.com/api/data?location=${continent}&food=${dish}`
     )
       .then((response) => response.json())
-      .then((data) => setFetchedData(data))
+      .then((data) => {
+        if (data === null) {
+          navigate('*');
+        } else {
+          setFetchedData(data);
+        }
+      })
       .then(() => setResponseFetched(true));
   }, []);
 

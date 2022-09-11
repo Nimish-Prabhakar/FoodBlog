@@ -405,7 +405,6 @@ function PrivacyPolicy() {
           <li>By email: ops@weadsmob.in</li>
         </ul>
       </div>
-      <hr className="hrBar" />
     </>
   );
 }

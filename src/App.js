@@ -10,6 +10,9 @@ import SouthAmerica from './Pages/SouthAmerica';
 import Home from './Pages/Home';
 import SingleMealPage from './Pages/SingleMealPage';
 import Contact from './Pages/Contact';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
+import AboutUs from './Pages/AboutUs';
+import Error404 from './Pages/404Error';
 import ScrollToTop from 'react-scroll-to-top';
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
           <Route path="/south-america" element={<SouthAmerica />} />
           <Route path="/:continent/:meal" element={<SingleMealPage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
       </BrowserRouter>
