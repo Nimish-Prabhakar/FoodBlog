@@ -5,9 +5,12 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 
-export default function BasicCard({ img, name, time, origin, para }) {
+export default function BasicCard({ img, name, time, origin, para, url }) {
+  const navigate = useNavigate();
+
   return (
     <Card
       sx={{
@@ -34,7 +37,9 @@ export default function BasicCard({ img, name, time, origin, para }) {
         </Typography>
       </CardContent>
       <CardActions sx={{ marginTop: '-10px', marginLeft: '10px' }}>
-        <Button size="small">Learn More</Button>
+        <Button onClick={() => navigate(`/${url}`)} size="small">
+          Learn More
+        </Button>
       </CardActions>
     </Card>
   );

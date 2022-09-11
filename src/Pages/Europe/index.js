@@ -1,9 +1,8 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import {
-  asianPageDishes1,
-  asianPageDishes2,
-  asianPageDishes3,
+  europePageDishes1,
+  europePageDishes2,
   viewMoreAsia1,
   viewMoreAsia2,
 } from '../../Constants/appConstants';
@@ -24,22 +23,22 @@ function Asia() {
       >
         <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
-            When we think of Asian cuisine, we think of dishes that are exotic,
-            delicious, and rich in flavors and spices.
+            European cuisine (also called "Western cuisine") refers collectively
+            to the cuisines of Europe and other Western countries.
           </p>
           <p className="homeHeaderSubContent">
-            Asia, being the world’s biggest and most populous continent, is home
-            to a diverse range of cultures, each with its own distinct cuisine.
+            Northern European cuisines are characterized by robust dishes, often
+            rich in fat. There are soups and stews, rich and robust dishes to
+            fight the cold.
           </p>
           <p className="homeHeaderSubContent">
-            Rice is a staple starch in almost all Asian dietary cultures.
-            Different types of rice are popular in different parts of the
-            region.
+            The European cuisine includes a wide use of meat ranging from
+            poultry to cattle, sheep, pork and varied game.
           </p>
         </div>
         <img
           className="contHeaderImg"
-          src="https://lh6.googleusercontent.com/gm3TteFjy6vDf94S2ukNzI56fic7_PttwuBS_Z-qHdKCzWbrWC1raK5WGT2vyO-MWpE=w2400"
+          src="https://lh4.googleusercontent.com/sA0nFwXSpx0e5-1nXTKUxDmAsGVps-t9j6BAe_ImFsoOSJGTNmCRXjwUyt9v-Gb5sGA=w2400"
           alt="contHeaderImg"
         />
       </div>
@@ -49,22 +48,27 @@ function Asia() {
       >
         <img
           className="contHeaderImg"
-          src="https://lh4.googleusercontent.com/u1_U_v2sYK7LS7si8B4ExwEoO-mFOVEinJrSd5470kcaDfmBsjnoX479rTdjJ-6_Uwc=w2400"
+          src="https://lh5.googleusercontent.com/N0i8fZGfTTPQsYhuZOZxHjP83U2wnnYrVtMLp8tHk_c4fobQHZJUNwnFhbq3XXyWhu4=w2400"
           alt="contHeaderImg"
         />
         <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
-            Asian cuisine evolution did not happen by itself. It occurred due to
-            European colonies migrating to the northeast and southwest.
+            The European cuisine subdivision is not clear, as is the
+            geographical subdivision. Turkey is normally recognized as a country
+            that is part of the Middle East by position and type of cuisine, but
+            a part of it belongs to European territories, as well as Russia
           </p>
           <p className="homeHeaderSubContent">
-            Vietnam, Laos, and Cambodia, for instance, were under French
-            colonies.Malaysia was under the British colony, whereas Indonesia
-            was ruled by the Dutch colony.
+            In coastal areas, all kinds of fish are present because the European
+            coasts are bathed by the main oceans and inland seas. There are
+            several products derived from wheat and rye.
           </p>
           <p className="homeHeaderSubContent">
-            It all ended up enhancing the original southeast cuisine, and
-            introducing additional components that are now part Asian cuisine.
+            There are many varieties of bread and each country has developed its
+            own recipes and cooking methods. In Italy there is pasta. Rice,
+            however cultivated is less used than potatoes, has become a staple
+            food especially in the northernmost countries after being imported
+            from the Americas.
           </p>
         </div>
       </div>
@@ -74,26 +78,30 @@ function Asia() {
         </Typography>
       </div>
       <div className="continentPageCardsFlex">
-        {asianPageDishes1.map((val) => {
+        {europePageDishes1.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="europe"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>
       <div className="continentPageCardsFlex">
-        {asianPageDishes2.map((val) => {
+        {europePageDishes2.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="europe"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>
-      <div className="continentPageCardsFlex">
-        {asianPageDishes3.map((val) => {
-          return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
-          );
-        })}
-      </div>
+
       <div className="viewMore" style={{ marginBottom: '40px' }}>
         <Typography sx={{ letterSpacing: '5px' }} variant="h4" gutterBottom>
           View More

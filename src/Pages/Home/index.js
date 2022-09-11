@@ -355,6 +355,7 @@ function Home() {
                 time={val.time}
                 origin={val.origin}
                 img={val.img}
+                url={val.url}
               />
             </div>
           );
@@ -370,6 +371,7 @@ function Home() {
                 time={val.time}
                 origin={val.origin}
                 img={val.img}
+                url={val.url}
               />
             </div>
           );
@@ -385,6 +387,7 @@ function Home() {
                 time={val.time}
                 origin={val.origin}
                 img={val.img}
+                url={val.url}
               />
             </div>
           );

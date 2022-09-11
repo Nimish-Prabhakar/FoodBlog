@@ -14,6 +14,7 @@ function SingleMealPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     let dish = window.location.pathname.split('/').pop();
     let continent = window.location.pathname.split('/')[1];
     continent = continent.charAt(0).toUpperCase() + continent.slice(1);

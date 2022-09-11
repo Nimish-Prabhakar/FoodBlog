@@ -6,6 +6,7 @@ export const homePageMeals1 = [
     origin: 'China',
     img: 'https://lh6.googleusercontent.com/1aJ_QbiOotLa2Dxtz2mcdKIdW-K7ziEBD0kAZ5ojIqeaQUWlpeCUXCFn2YmohsHqnK0=w2400',
     fade: 'right',
+    url: 'asia/dimsum',
   },
   {
     name: 'Steak',
@@ -14,6 +15,7 @@ export const homePageMeals1 = [
     origin: 'Europe',
     img: 'https://lh6.googleusercontent.com/MbVVm13zL6nPLs1CpTYBMZl3lP3ttpwvCMj0uvaqmguDTM-b6xuXef-Fr29RcIaHzm0=w2400',
     fade: 'up',
+    url: 'europe/steaktartare',
   },
   {
     name: 'Biryani',
@@ -22,6 +24,7 @@ export const homePageMeals1 = [
     origin: 'India',
     img: 'https://lh5.googleusercontent.com/Y7t8hyTvgTWfemudPOkTKCYoaCNw7VXRKPzc0AFUyhS7X2vuvxVds-bEgq4iopeg5S0=w2400',
     fade: 'left',
+    url: 'asia/biryani',
   },
 ];
 
@@ -33,6 +36,7 @@ export const homePageMeals2 = [
     origin: 'Europe',
     img: 'https://lh6.googleusercontent.com/atBzDXVcqMLg2ENyX66SbrJznlrES1THCgNV74wvDgoi65gvECMFnlDETRowX1vAAkM=w2400',
     fade: 'right',
+    url: 'europe/oysters',
   },
   {
     name: 'Taco',
@@ -41,6 +45,7 @@ export const homePageMeals2 = [
     origin: 'Mexico',
     img: 'https://lh6.googleusercontent.com/iXWMnxMZ2WhF-6xjJI2azrBoz4UNrWVG4wvuxnkGpPF60U2Gsc_NWUYQF8qg1_Vi7WA=w2400',
     fade: 'up',
+    url: 'southAmerica/taco',
   },
   {
     name: 'Couscous',
@@ -49,6 +54,7 @@ export const homePageMeals2 = [
     origin: 'Africa',
     img: 'https://lh4.googleusercontent.com/acChv2hQoFnkopPHxs4_twV2hIm6KePTYvRcGqoYBDhRZ6iQSmYcdwIioTvifMke7oU=w2400',
     fade: 'left',
+    url: 'africa/couscous',
   },
 ];
 
@@ -60,6 +66,7 @@ export const homePageMeals3 = [
     origin: 'Argentina',
     img: 'https://lh4.googleusercontent.com/tBi5dZARnYH9lJBCZkzhAK6riXDsJcQVmYpOCCcYiVixyvT5FAkiDuOGdnI85sjyNIM=w2400',
     fade: 'right',
+    url: 'southAmerica/milanesa',
   },
   {
     name: 'Kisra',
@@ -68,6 +75,7 @@ export const homePageMeals3 = [
     origin: 'Africa',
     img: 'https://lh5.googleusercontent.com/oKzYp_Bt34ttyv7jUeYRmTuGA_h-940cR8FgTIYECmMAxQ8KVM8HftvNrhDec1uKJu4=w2400',
     fade: 'up',
+    url: 'asia/biryani',
   },
   {
     name: 'Buffalo wing',
@@ -76,6 +84,7 @@ export const homePageMeals3 = [
     origin: 'United States',
     img: 'https://lh3.googleusercontent.com/VW4fXbePoCq9fGUD-C4i8R-FGNfum_SnQ7aiU-rjFA8v30NL34kHY5LS_Z663P0hB6k=w2400',
     fade: 'left',
+    url: 'northAmerica/buffalowings',
   },
 ];
 
@@ -250,5 +259,41 @@ export const africaPageDishes2 = [
     name: 'Wat',
     img: 'https://lh5.googleusercontent.com/JiXoKm-I3isl8yyojegWNvga8hq-10Z8lSuJXbQ716ZYbl-awL_CJ9hTVX4SICGbVzQ=w2400',
     subHeader: 'A spicy stew made with berbere',
+  },
+];
+
+export const europePageDishes1 = [
+  {
+    name: 'Steak Tartare',
+    img: 'https://lh6.googleusercontent.com/NrhqwEMIJvskH27uSci9o9FkirJjpBC6led0q9RLJSeJc_xOUOKLmF30j_g23lkgoss=w2400',
+    subHeader: 'slashed raw beef with salt',
+  },
+  {
+    name: 'Waffles',
+    img: 'https://lh5.googleusercontent.com/nAy0YbFEJyPC_Vy0MNaHbGvXLcRI9_hPpZswOq3Q_9jUpEaUwUvG5DlIRDxgEJ36now=w2400',
+    subHeader: 'Delicious cakes from Belgium',
+  },
+  {
+    name: 'Pizza',
+    img: 'https://lh4.googleusercontent.com/tghCAyWzIwjQPjIvQD8vR-59x1QyWqZeoqrAWnE-1h_oea0o_QBOUBo-v7jCej8FEek=w2400',
+    subHeader: 'Greatest creation ever !!',
+  },
+];
+
+export const europePageDishes2 = [
+  {
+    name: 'Ajvar',
+    img: 'https://lh4.googleusercontent.com/VpkzFtlr7WkxBMQlSzW3aQZKHvwo5sehaIo6r6WZflVd4SEJ3iePu2BtQnvcL1x0KDc=w2400',
+    subHeader: 'traditional peppers-and-eggplant relish',
+  },
+  {
+    name: 'Pastel De Belem',
+    img: 'https://lh4.googleusercontent.com/qom112fe3lJASiPk03ikEj0dvrbgs2a2rFO6Rxjl6drVjdF3XTuhZ8t-DpvdJH5dKk4=w2400',
+    subHeader: 'Portuguese egg custard tart',
+  },
+  {
+    name: 'Oysters',
+    img: 'https://lh5.googleusercontent.com/MGF1G8olBhcvtEqS4FUx49sNmf_hMuZwUXlHIHiWLYeRol_fkeS8d3_hwWDLvusMrNw=w2400',
+    subHeader: 'Healthy food from marine',
   },
 ];
