@@ -297,3 +297,39 @@ export const europePageDishes2 = [
     subHeader: 'Healthy food from marine',
   },
 ];
+
+export const southAmPageDishes1 = [
+  {
+    name: 'Taco',
+    img: 'https://lh5.googleusercontent.com/nsmIidNKxfZcdmDLTt1gz16tIKV7CY9dWe67UnYuTZ2OgEuvdN63_1z2M-w6v8K1DrI=w2400',
+    subHeader: 'National dish of Mexico',
+  },
+  {
+    name: 'Milanesa',
+    img: 'https://lh4.googleusercontent.com/T3oj2IsQE9RSzYs4lhKw5-j7Z1wRDh7j3GXmhYjqBdWaEqrVeFvXDC4ezM3892tC2uk=w2400',
+    subHeader: 'Argentina unofficial national dish',
+  },
+  {
+    name: 'Picanha',
+    img: 'https://lh5.googleusercontent.com/LQlhiX9Fw5QzA59gfFb06SMvLtC7J0fOXiw2DlG8poW5_XfVS2FTibwlJ8HmRforv1M=w2400',
+    subHeader: 'fresh cut of beef',
+  },
+];
+
+export const southAmPageDishes2 = [
+  {
+    name: 'Parrilla',
+    img: 'https://lh4.googleusercontent.com/9A3dleAIwkA7oQcWl-0zjmVSxMUJnHP5xi6FjoQiDg4YZ-5y-SPQaUTBrIOSbmy-wTM=w2400',
+    subHeader: 'steakhouse and meat preparation',
+  },
+  {
+    name: 'Ceviche',
+    img: 'https://lh4.googleusercontent.com/xbceEIx0evZv0hUVvkmOrhit-NSMndjpV4fPVjxTI6HCBfZvCULBNguuvennxMyWfUM=w2400',
+    subHeader: 'National dish of Peru',
+  },
+  {
+    name: 'Churrasco',
+    img: 'https://lh5.googleusercontent.com/x6JRw5NhZ0QBaIhVmo-UuIvj-dZVbh9aGOhF0GjaWbvFOkWSPFaUjmdUrYiK70fG6Nk=w2400',
+    subHeader: ' Brazilian barbecue method',
+  },
+];

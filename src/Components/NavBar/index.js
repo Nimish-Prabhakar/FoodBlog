@@ -56,7 +56,10 @@ function NavBar() {
       currentTab.includes('northAmerica')
     ) {
       setValue(2);
-    } else if (currentTab.includes('south-america')) {
+    } else if (
+      currentTab.includes('south-america') ||
+      currentTab.includes('southAmerica')
+    ) {
       setValue(3);
     } else if (currentTab.includes('africa')) {
       setValue(4);

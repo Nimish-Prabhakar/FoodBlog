@@ -46,7 +46,7 @@ function Asia() {
         <LazyLoadImage
           effect="blur"
           className="contHeaderImg"
-          src="https://lh6.googleusercontent.com/gm3TteFjy6vDf94S2ukNzI56fic7_PttwuBS_Z-qHdKCzWbrWC1raK5WGT2vyO-MWpE=w2400"
+          src="https://lh3.googleusercontent.com/hynhyzDX7XY0h1wMFf98mq01NzIdG75VF9UiZk0JWRTltuum4Fw9qRenxOGkbD0W7f0=w2400"
           alt="contHeaderImg"
         />
       </div>
@@ -57,7 +57,7 @@ function Asia() {
         <LazyLoadImage
           effect="blur"
           className="contHeaderImg"
-          src="https://lh4.googleusercontent.com/u1_U_v2sYK7LS7si8B4ExwEoO-mFOVEinJrSd5470kcaDfmBsjnoX479rTdjJ-6_Uwc=w2400"
+          src="https://lh4.googleusercontent.com/JzoGKfnwUQf3RpWSwhR2Iloya9x1KFDL9F03WfMvfsAu4avt0pQ2AhtIrZo2Dy4XeP8=w2400"
           alt="contHeaderImg"
         />
         <div className="homeHeaderContent">

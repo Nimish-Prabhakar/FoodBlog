@@ -1,9 +1,8 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import {
-  asianPageDishes1,
-  asianPageDishes2,
-  asianPageDishes3,
+  southAmPageDishes2,
+  southAmPageDishes1,
   viewMoreAsia1,
   viewMoreAsia2,
 } from '../../Constants/appConstants';
@@ -28,22 +27,23 @@ function SouthAmerica() {
       >
         <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
-            When we think of Asian cuisine, we think of dishes that are exotic,
-            delicious, and rich in flavors and spices.
+            Products coming from the Amazon are characteristic of South American
+            flavors, such as quinoa and thousands of sorts of potatoes.
           </p>
           <p className="homeHeaderSubContent">
-            Asia, being the world’s biggest and most populous continent, is home
-            to a diverse range of cultures, each with its own distinct cuisine.
+            The Southern tip bordering the Pacific is known for seafood, notably
+            dishes like ceviche or grilled fish.
           </p>
           <p className="homeHeaderSubContent">
-            Rice is a staple starch in almost all Asian dietary cultures.
-            Different types of rice are popular in different parts of the
-            region.
+            Is South American cuisine synonymous with hearty hand-rolled pasta
+            dishes popular in Argentina or with the fresh lemon-cilantro flavor
+            of Peruvian ceviche? Both are key but are based on an array of
+            cultural and culinary influences
           </p>
         </div>
         <img
           className="contHeaderImg"
-          src="https://lh6.googleusercontent.com/gm3TteFjy6vDf94S2ukNzI56fic7_PttwuBS_Z-qHdKCzWbrWC1raK5WGT2vyO-MWpE=w2400"
+          src="https://lh6.googleusercontent.com/bu1OlhwmsekrL25I4tUA60yUJos6BDpMi7StWYomwAY14NUEJcRth93jWr3hWYrXtok=w2400"
           alt="contHeaderImg"
         />
       </div>
@@ -53,22 +53,22 @@ function SouthAmerica() {
       >
         <img
           className="contHeaderImg"
-          src="https://lh4.googleusercontent.com/u1_U_v2sYK7LS7si8B4ExwEoO-mFOVEinJrSd5470kcaDfmBsjnoX479rTdjJ-6_Uwc=w2400"
+          src="https://lh3.googleusercontent.com/FpvVHN2uRiPj937lG68ABgHBrixph7suEzPXT1HeHpSJMYLrgmd613H4f_NHVCccFTM=w2400"
           alt="contHeaderImg"
         />
         <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
-            Asian cuisine evolution did not happen by itself. It occurred due to
-            European colonies migrating to the northeast and southwest.
+            Eastern European potato salad, Italian gnocchi, French croissants,
+            and Spanish saffron-onion sauces are all part of today’s South
+            American cooking.
           </p>
           <p className="homeHeaderSubContent">
-            Vietnam, Laos, and Cambodia, for instance, were under French
-            colonies.Malaysia was under the British colony, whereas Indonesia
-            was ruled by the Dutch colony.
+            South American cuisine is a blend of indigenous, African, Spanish
+            and Portuguese roots.
           </p>
           <p className="homeHeaderSubContent">
-            It all ended up enhancing the original southeast cuisine, and
-            introducing additional components that are now part Asian cuisine.
+            All the different immigrants brought their customs and foods, which
+            fused with the native cultures to create creole cuisine.
           </p>
         </div>
       </div>
@@ -78,23 +78,26 @@ function SouthAmerica() {
         </Typography>
       </div>
       <div className="continentPageCardsFlex">
-        {asianPageDishes1.map((val) => {
+        {southAmPageDishes1.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="southAmerica"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>
       <div className="continentPageCardsFlex">
-        {asianPageDishes2.map((val) => {
+        {southAmPageDishes2.map((val) => {
           return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
-          );
-        })}
-      </div>
-      <div className="continentPageCardsFlex">
-        {asianPageDishes3.map((val) => {
-          return (
-            <Blog name={val.name} img={val.img} subHeader={val.subHeader} />
+            <Blog
+              continent="southAmerica"
+              name={val.name}
+              img={val.img}
+              subHeader={val.subHeader}
+            />
           );
         })}
       </div>

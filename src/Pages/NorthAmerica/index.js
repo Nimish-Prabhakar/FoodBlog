@@ -43,7 +43,7 @@ function NorthAmerica() {
         </div>
         <img
           className="contHeaderImg"
-          src="https://lh5.googleusercontent.com/alziA58QU6KbkYEZroG1PeWjVojELzQYNz8aQfq1o0JE0PitQIEnIWv-PRaLl-kaz50=w2400"
+          src="https://lh5.googleusercontent.com/7XTygc17N0zxr-019ORu2N-Of1bNg_H0IwcG4ers0Kyvb0T5R3wxo_7_nubyUYxtGRE=w2400"
           alt="contHeaderImg"
         />
       </div>
@@ -53,7 +53,7 @@ function NorthAmerica() {
       >
         <img
           className="contHeaderImg"
-          src="https://lh3.googleusercontent.com/CTT0I3Z72TA0MQdtqtCxiIMG-XydHbAWb1JFSxuw5qa_c_aARUMqeyjUS7NtY-ajUQ0=w2400"
+          src="https://lh6.googleusercontent.com/Wn932FjUDTV8ZV62woNvDCuAe3g09xjgsLeIsXtWOwdl3vCgU_wJCRa-EMjrZH8SRjA=w2400"
           alt="contHeaderImg"
         />
         <div className="homeHeaderContent">
