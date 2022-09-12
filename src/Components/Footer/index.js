@@ -58,10 +58,38 @@ function Footer() {
           </div>
           <div className="vr"></div>
           <div className="iconFlex" style={{ margin: 0 }}>
-            <BsInstagram style={{ color: 'white' }} className="socialIcons" />
-            <BsTwitter style={{ color: 'white' }} className="socialIcons" />
-            <BsWhatsapp style={{ color: 'white' }} className="socialIcons" />
-            <BsFacebook style={{ color: 'white' }} className="socialIcons" />
+            <BsInstagram
+              onClick={() =>
+                window.open(
+                  'https://www.instagram.com/numberonemeals/',
+                  '_blank'
+                )
+              }
+              style={{ color: 'white' }}
+              className="socialIcons"
+            />
+            <BsTwitter
+              onClick={() =>
+                window.open('https://mobile.twitter.com/top100food', '_blank')
+              }
+              style={{ color: 'white' }}
+              className="socialIcons"
+            />
+            <BsWhatsapp
+              onClick={() => window.open('https://www.whatsapp.com/', '_blank')}
+              style={{ color: 'white' }}
+              className="socialIcons"
+            />
+            <BsFacebook
+              onClick={() =>
+                window.open(
+                  'https://www.facebook.com/profile.php?id=100085885082369',
+                  '_blank'
+                )
+              }
+              style={{ color: 'white' }}
+              className="socialIcons"
+            />
           </div>
         </div>
         <p style={{ color: 'white', alignSelf: 'center' }}>
