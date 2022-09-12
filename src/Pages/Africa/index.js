@@ -42,7 +42,7 @@ function Africa() {
         </div>
         <img
           className="contHeaderImg"
-          src="https://lh5.googleusercontent.com/Pov5QM8OmAHBruPkNqI7PicrSLdU816lPhYxpKdUDJQyBXQUQjxxU_VW0kaIhP7JiOE=w2400"
+          src="https://lh4.googleusercontent.com/gde2h0YVizxF_r7hWmha1mp2mS6Gg-EaCeh59C01hnpx9xC-GEQZVB6YVKhU8BGb1oM=w2400"
           alt="contHeaderImg"
         />
       </div>

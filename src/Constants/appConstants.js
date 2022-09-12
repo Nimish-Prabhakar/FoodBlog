@@ -162,7 +162,7 @@ export const viewMoreAsia2 = [
     header: 'From Streets of Mexico',
     img: 'https://lh6.googleusercontent.com/1Ix3E8AJTISdNHsRWI_O_Qd-bUQF01c9g76g_lUUioZPzxT-8kEMggt8KEy8_dcuoAU=w2400',
     subHeader: 'Taco',
-    url: '/south-america/taco',
+    url: '/southAmerica/taco',
   },
   {
     header: 'Most Popular Meals',
