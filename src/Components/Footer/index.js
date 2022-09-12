@@ -52,7 +52,7 @@ function Footer() {
             <Link className="footerTab" to="/privacy-policy">
               privacy-policy
             </Link>
-            <Link className="footerTab" to="/terms-condition">
+            <Link className="footerTab" to="/terms-conditions">
               Terms And Conditions
             </Link>
           </div>

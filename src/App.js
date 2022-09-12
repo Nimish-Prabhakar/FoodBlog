@@ -13,6 +13,7 @@ import Contact from './Pages/Contact';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import AboutUs from './Pages/AboutUs';
 import Error404 from './Pages/404Error';
+import TermsCondition from './Pages/TermsCondition';
 import ScrollToTop from 'react-scroll-to-top';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/terms-conditions" element={<TermsCondition />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
