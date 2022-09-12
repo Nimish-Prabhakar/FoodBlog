@@ -2,10 +2,6 @@ import React, { useEffect } from 'react';
 import Logo from '../../img/logo.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import { BsInstagram, BsTwitter, BsFacebook, BsWhatsapp } from 'react-icons/bs';
-import Input from '@mui/material/Input';
-import TextField from '@mui/material/TextField';
-import SearchIcon from '@mui/icons-material/Search';
 import { useNavigate } from 'react-router-dom';
 import './NavBar.css';
 
@@ -78,35 +74,12 @@ function NavBar() {
   return (
     <>
       <div className="navUpper">
-        <div className="iconFlex">
-          <BsInstagram className="socialIcons" />
-          <BsTwitter className="socialIcons" />
-          <BsWhatsapp className="socialIcons" />
-          <BsFacebook className="socialIcons" />
-        </div>
         <img
           onClick={() => navigate('/')}
           className="logoImg"
           src={Logo}
           alt="logo"
         />
-
-        <div className="searchFlex">
-          <SearchIcon
-            sx={{
-              color: 'action.active',
-              mr: 1.5,
-              marginTop: '18px',
-              fontSize: '30px',
-            }}
-          />
-          <TextField
-            id="input-with-sx"
-            label="Search your favourite meals"
-            variant="standard"
-            sx={styles.serachField}
-          />
-        </div>
       </div>
       <div className="navLinks">
         <Tabs
