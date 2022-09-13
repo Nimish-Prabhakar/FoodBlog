@@ -75,7 +75,7 @@ export const homePageMeals3 = [
     origin: 'Africa',
     img: 'https://lh5.googleusercontent.com/oKzYp_Bt34ttyv7jUeYRmTuGA_h-940cR8FgTIYECmMAxQ8KVM8HftvNrhDec1uKJu4=w2400',
     fade: 'up',
-    url: 'asia/biryani',
+    url: 'africa/kisra',
   },
   {
     name: 'Buffalo wing',
