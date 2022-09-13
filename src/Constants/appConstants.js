@@ -333,3 +333,33 @@ export const southAmPageDishes2 = [
     subHeader: ' Brazilian barbecue method',
   },
 ];
+
+export const viewMoreAsia3 = [
+  {
+    header: 'Iranian flavored rice',
+    img: 'https://lh4.googleusercontent.com/KvH9ILbOovvh7HdoWpxSrg0STzpNjbc7OU70kbGAl3D3GcovthECdmpw1M9bAjDOYiI=w2400',
+    subHeader: 'Biryani',
+    url: '/asia/biryani',
+  },
+  {
+    header: 'Most Popular Meals',
+    img: 'https://lh6.googleusercontent.com/DmltL3CBGvJJZ2iM1idZQHjk0n1pvr9O1mQGVRxt2nBtXtQAE8oi_Gwo71Hxf2_aFzY=w2400',
+    subHeader: 'South America',
+    url: '/south-america',
+  },
+];
+
+export const viewMoreAsia4 = [
+  {
+    header: 'Tiny Cakes of love',
+    img: 'https://lh6.googleusercontent.com/t5XDVmaEA7gFNdzOmbFRJmhsPMhpC5JRGJeCudhz9DKUfIy8YU4q5-2o_2AHMuy1Q44=w2400',
+    subHeader: 'Cup Cake',
+    url: '/northAmerica/cupcake',
+  },
+  {
+    header: 'Most Popular Meals',
+    img: 'https://lh6.googleusercontent.com/r3OJ2hiIHgTec-xC27X_3v4BvXA5MfMHFG49Hf-UJ9sZj4mqDcJAJ6NFdfedX6XUPbQ=w2400',
+    subHeader: 'Asia',
+    url: '/asia',
+  },
+];

@@ -3,8 +3,8 @@ import Typography from '@mui/material/Typography';
 import {
   africaPageDishes1,
   africaPageDishes2,
-  viewMoreAsia1,
-  viewMoreAsia2,
+  viewMoreAsia3,
+  viewMoreAsia4,
 } from '../../Constants/appConstants';
 import ViewMoreCard from '../../Components/viewMoreCard';
 import Blog from '../../Components/Blog';
@@ -110,7 +110,7 @@ function Africa() {
         <hr />
       </div>
       <div className="viewMoreContent">
-        {viewMoreAsia1.map((val) => {
+        {viewMoreAsia3.map((val) => {
           return (
             <ViewMoreCard
               img={val.img}
@@ -122,7 +122,7 @@ function Africa() {
         })}
       </div>
       <div className="viewMoreContent">
-        {viewMoreAsia2.map((val) => {
+        {viewMoreAsia4.map((val) => {
           return (
             <ViewMoreCard
               img={val.img}
