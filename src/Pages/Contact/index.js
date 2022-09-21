@@ -138,7 +138,10 @@ function Contact() {
           <IoLocationSharp
             style={{ color: 'red', fontSize: '25px', marginRight: '10px' }}
           />
-          <p>Weadsmob, 108/1 Madangir Village near Sidewal, New Delhi</p>
+          <p>
+            PREMIUM FACILITY MANAGEMENT, GROUND FLOOR, PLOT NO-82, PKT-3,
+            SECTOR-25, ROHINI, North West Delhi, Delhi, 110085
+          </p>
         </div>
         <div className="contactPageLocation">
           <IoMail

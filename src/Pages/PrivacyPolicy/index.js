@@ -37,8 +37,9 @@ function PrivacyPolicy() {
           </li>
           <li>
             Company (referred to as either “the Company”, “We”, “Us” or “Our” in
-            this Agreement) refers to Weadsmob, 108/1 Mandangir Near Sidwal New
-            Delhi, 110062 New Dehi (New Delhi).
+            this Agreement) refers to PREMIUM FACILITY MANAGEMENT, GROUND FLOOR,
+            PLOT NO-82, PKT-3, SECTOR-25, ROHINI, North West Delhi, Delhi,
+            110085.
           </li>
           <li>
             Cookies are small files that are placed on Your computer, mobile

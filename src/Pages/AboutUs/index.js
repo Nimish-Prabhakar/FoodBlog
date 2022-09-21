@@ -25,6 +25,10 @@ function AboutUs() {
       >
         <div className="homeHeaderContent">
           <p className="homeHeaderSubContent">
+            This website is a property of Premium Facility Management, located
+            at North West Delhi in India.
+          </p>
+          <p className="homeHeaderSubContent">
             Number one meals is small project started by us to enlighten people
             about the different cuisines from different parts of the world.
           </p>
