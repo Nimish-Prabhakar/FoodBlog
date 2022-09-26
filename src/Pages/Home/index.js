@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TextField from '@mui/material/TextField';
 import BasicCard from '../../Components/BlogCard';
+import { useNavigate } from 'react-router-dom';
 import {
   homePageMeals1,
   homePageMeals2,
@@ -75,6 +76,8 @@ function Home() {
     user_email: '',
     message: '',
   });
+
+  const navigate = useNavigate();
 
   const [responseFetched, setResponseFetched] = useState(false);
   const [emailConfirmed, setEmailConfirmed] = useState(false);
@@ -241,7 +244,11 @@ function Home() {
             don't get confused by the nomenclature, all these words have common
             meaning.
           </p>
-          <Button sx={{ marginTop: '50px' }} variant="outlined">
+          <Button
+            onClick={() => navigate('/about')}
+            sx={{ marginTop: '50px' }}
+            variant="outlined"
+          >
             Learn more about us --&gt;
           </Button>
         </div>
