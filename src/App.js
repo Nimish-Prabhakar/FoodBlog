@@ -35,6 +35,7 @@ function App() {
           <Route path="/terms-conditions" element={<TermsCondition />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
+        <div id="taboola-below-article-thumbnails"></div>
         <Footer />
       </BrowserRouter>
       <ScrollToTop smooth />
