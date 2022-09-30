@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
 import NavBar from './Components/NavBar';
-import Footer, { useState } from './Components/Footer';
+import Footer from './Components/Footer';
 import Asia from './Pages/Asia';
 import Africa from './Pages/Africa';
 import Europe from './Pages/Europe';
