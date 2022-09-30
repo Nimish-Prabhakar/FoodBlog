@@ -7,7 +7,7 @@ import './Footer.css';
 function Footer() {
   return (
     <>
-      <div className="footer">
+      <div id="footer-page" className="footer">
         <div className="footerWrapper">
           <img className="footerLogo" src={logo} alt="logo" />
           <div className="footerTabs">

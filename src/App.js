@@ -66,7 +66,7 @@ function App() {
           <Route path="/terms-conditions" element={<TermsCondition />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-        <Footer id="page-footer" />
+        <Footer />
       </BrowserRouter>
       <ScrollToTop smooth />
     </div>
