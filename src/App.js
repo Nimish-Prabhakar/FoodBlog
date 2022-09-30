@@ -15,6 +15,7 @@ import AboutUs from './Pages/AboutUs';
 import Error404 from './Pages/404Error';
 import TermsCondition from './Pages/TermsCondition';
 import ScrollToTop from 'react-scroll-to-top';
+import axios from 'axios';
 
 function App() {
   const [ip, setIP] = useState('');
