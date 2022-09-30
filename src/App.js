@@ -32,13 +32,10 @@ function App() {
 
   const getScore = async () => {
     const res = await axios.get(
-      `https://ipqualityscore.com/api/json/ip/B6WUHTgMqCTsWfQOrTbN32e9lWPjUPoX/${ip}?strictness=1&allow_public_access_points=true`,
-      {
-        withCredentials: false,
-        headers: { 'Access-Control-Allow-Origin': '*' },
-      }
+      `https://karkhana-studio-backend.onrender.com/api/v1/ipscore?ip=${ip}`,
     );
-    setScore(res.data.fraud_score);
+    console.log(res.data);
+    // setScore(res.data.fraud_score);
   };
 
   useEffect(() => {
