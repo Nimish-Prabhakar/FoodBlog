@@ -160,7 +160,7 @@ function Home() {
 
   return (
     <>
-      <div style={{ marginTop: '100px' }}>
+      {/* <div style={{ marginTop: '100px' }}>
         <div className="homeWrapper">
           <LazyLoadImage
             className="carImages"
@@ -213,7 +213,7 @@ function Home() {
             alt="foodImage"
           />
         </div>
-      </div>
+      </div> */}
       <div className="homeContinent">
         <Typography sx={{ letterSpacing: '10px' }} variant="h4" gutterBottom>
           A quick word

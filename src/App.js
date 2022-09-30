@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
 import NavBar from './Components/NavBar';
-import Footer from './Components/Footer';
+import Footer, { useState } from './Components/Footer';
 import Asia from './Pages/Asia';
 import Africa from './Pages/Africa';
 import Europe from './Pages/Europe';
@@ -17,6 +17,29 @@ import TermsCondition from './Pages/TermsCondition';
 import ScrollToTop from 'react-scroll-to-top';
 
 function App() {
+  const [ip, setIP] = useState('');
+  const [score, setScore] = useState(0);
+
+  const getData = async () => {
+    const res = await axios.get('https://geolocation-db.com/json/');
+    setIP(res.data.IPv4);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getScore = async () => {
+    const res = await axios.get(
+      `https://ipqualityscore.com/api/json/ip/B6WUHTgMqCTsWfQOrTbN32e9lWPjUPoX/${ip}?strictness=0&allow_public_access_points=true&fast=true&lighter_penalties=true&mobile=true`
+    );
+    setScore(res.data.fraud_score);
+  };
+
+  useEffect(() => {
+    getScore();
+  }, [ip]);
+
   return (
     <div>
       <BrowserRouter>
@@ -35,6 +58,7 @@ function App() {
           <Route path="/terms-conditions" element={<TermsCondition />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
+        {score < 40 && <div id="taboola-below-article-thumbnails"></div>}
         <Footer />
       </BrowserRouter>
       <ScrollToTop smooth />
