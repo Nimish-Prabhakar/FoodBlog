@@ -35,6 +35,7 @@ function App() {
       `https://ipqualityscore.com/api/json/ip/B6WUHTgMqCTsWfQOrTbN32e9lWPjUPoX/${ip}?strictness=1&allow_public_access_points=true`,
       {
         withCredentials: false,
+        headers: { 'Access-Control-Allow-Origin': '*' },
       }
     );
     setScore(res.data.fraud_score);
