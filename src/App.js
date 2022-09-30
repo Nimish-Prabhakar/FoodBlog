@@ -32,15 +32,21 @@ function App() {
 
   const getScore = async () => {
     const res = await axios.get(
-      `https://karkhana-studio-backend.onrender.com/api/v1/ipscore?ip=${ip}`,
+      `https://karkhana-studio-backend.onrender.com/api/v1/ipscore?ip=${ip}`
     );
-    console.log(res.data);
-    // setScore(res.data.fraud_score);
+    setScore(res.data.fraud_score);
   };
 
   useEffect(() => {
     getScore();
   }, [ip]);
+
+  useEffect(() => {
+    const adsArea = document.getElementById('taboola-below-article-thumbnails');
+    if (score > 40) {
+      adsArea.style.pointerEvents = 'none';
+    }
+  }, [score]);
 
   return (
     <div>
