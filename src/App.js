@@ -32,9 +32,11 @@ function App() {
 
   const getScore = async () => {
     const res = await axios.get(
-      `https://ipqualityscore.com/api/json/ip/B6WUHTgMqCTsWfQOrTbN32e9lWPjUPoX/${ip}?strictness=1&allow_public_access_points=true`
+      `https://ipqualityscore.com/api/json/ip/B6WUHTgMqCTsWfQOrTbN32e9lWPjUPoX/${ip}?strictness=1&allow_public_access_points=true`,
+      {
+        withCredentials: false,
+      }
     );
-    console.log(res.data);
     setScore(res.data.fraud_score);
   };
 
