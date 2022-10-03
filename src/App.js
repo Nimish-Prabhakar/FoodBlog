@@ -43,6 +43,8 @@ function App() {
 
   useEffect(() => {
     const adsArea = document.getElementById('taboola-below-article-thumbnails');
+    adsArea.style.width = '1200px';
+    adsArea.style.marginLeft = '100px';
     if (score > 40) {
       adsArea.style.pointerEvents = 'none';
     }
