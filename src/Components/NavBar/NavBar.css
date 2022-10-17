@@ -31,6 +31,10 @@
   margin-bottom: 30px;
 }
 
+.hamburgIcon {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1280px) {
   .logoImg {
     height: 20vh;
@@ -46,5 +50,14 @@
   }
   .navUpper {
     justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navUpper {
+    justify-content: space-between;
+  }
+  .navLinks {
+    margin-top: 0;
   }
 }

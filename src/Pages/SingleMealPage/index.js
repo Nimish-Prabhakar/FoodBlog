@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Typography from '@mui/material/Typography';
@@ -7,17 +7,62 @@ import { viewMoreAsia1, viewMoreAsia2 } from '../../Constants/appConstants';
 import ViewMoreCard from '../../Components/viewMoreCard';
 import CircularProgress from '@mui/material/CircularProgress';
 import { useNavigate } from 'react-router-dom';
+import MetaTags from 'react-meta-tags';
+import axios from 'axios';
 
 function SingleMealPage() {
   const [fetchedData, setFetchedData] = useState({ images: [] });
   const [responseFetched, setResponseFetched] = useState(false);
   const navigate = useNavigate();
+  const [currentUrl, setCurrentUrl] = useState('');
+
+  useEffect(() => {
+    if (window.innerWidth > 1000) {
+      setTimeout(() => {
+        const adsArea = document.getElementById('ads-ref');
+        const elements1 = document.querySelectorAll(`[data-item-id^="~~V1~~"]`);
+
+        elements1.forEach((element) => {
+          element.style.width = '15%';
+        });
+        adsArea.style.width = '1200px';
+        adsArea.style.marginLeft = '50px';
+      }, 3000);
+    }
+  }, [responseFetched]);
+
+  const divRef = useRef();
+
+  const htmlString = `
+   <div id="taboola-below-article-thumbnails"></div>
+    <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      _taboola.push({
+        mode: 'thumbnails-a',
+        container: 'taboola-below-article-thumbnails',
+        placement: 'Below Article Thumbnails',
+        target_type: 'mix',
+      });
+    </script>
+    <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      _taboola.push({ flush: true });
+    </script>
+  `;
+
+  useEffect(() => {
+    const fragment = document
+      .createRange()
+      .createContextualFragment(htmlString);
+    divRef.current.append(fragment);
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     let dish = window.location.pathname.split('/').pop();
     let continent = window.location.pathname.split('/')[1];
     continent = continent.charAt(0).toUpperCase() + continent.slice(1);
+    setCurrentUrl(continent + '/' + dish);
     fetch(
       `https://karkhana-studio-backend.onrender.com/api/data?location=${continent}&food=${dish}`
     )
@@ -34,6 +79,7 @@ function SingleMealPage() {
 
   return (
     <>
+      <div id="ads-ref" ref={divRef}></div>
       {!responseFetched && (
         <div className="circularProgress">
           <CircularProgress size={100} color="success" />
@@ -41,6 +87,15 @@ function SingleMealPage() {
       )}
       {responseFetched && (
         <>
+          <MetaTags>
+            <title>{fetchedData.name}</title>
+            <meta property="og:title" content={fetchedData.name} />
+            <meta property="og:image" content={fetchedData.images[0]} />
+            <meta
+              property="og:url"
+              content={`https://numberonemeals.com/${currentUrl}`}
+            />
+          </MetaTags>
           <div className="SingleMealPageImageCarousel">
             <Carousel
               infiniteLoop={true}
@@ -66,7 +121,7 @@ function SingleMealPage() {
               <Typography sx={{ letterSpacing: '1px' }} variant="h3">
                 {fetchedData.name}
               </Typography>
-              <Flag style={{ height: '100px' }} code={fetchedData.code} />
+              <Flag className="SingleMealPageFlag" code={fetchedData.code} />
             </div>
             {fetchedData.description.map((description) => {
               return (
@@ -79,7 +134,11 @@ function SingleMealPage() {
               );
             })}
           </div>
-          <hr className="SingleMealPageHr" />
+        </>
+      )}
+      <hr className="SingleMealPageHr" />
+      {window.innerWidth > 1000 && (
+        <>
           <div className="viewMore" style={{ marginBottom: '40px' }}>
             <Typography sx={{ letterSpacing: '5px' }} variant="h4" gutterBottom>
               View More

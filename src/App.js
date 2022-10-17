@@ -15,41 +15,8 @@ import AboutUs from './Pages/AboutUs';
 import Error404 from './Pages/404Error';
 import TermsCondition from './Pages/TermsCondition';
 import ScrollToTop from 'react-scroll-to-top';
-import axios from 'axios';
 
 function App() {
-  const [ip, setIP] = useState('');
-  const [score, setScore] = useState(0);
-
-  const getData = async () => {
-    const res = await axios.get('https://geolocation-db.com/json/');
-    setIP(res.data.IPv4);
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  const getScore = async () => {
-    const res = await axios.get(
-      `https://karkhana-studio-backend.onrender.com/api/v1/ipscore?ip=${ip}`
-    );
-    setScore(res.data.fraud_score);
-  };
-
-  useEffect(() => {
-    getScore();
-  }, [ip]);
-
-  useEffect(() => {
-    const adsArea = document.getElementById('taboola-below-article-thumbnails');
-    adsArea.style.width = '1200px';
-    adsArea.style.marginLeft = '100px';
-    if (score > 40) {
-      adsArea.style.pointerEvents = 'none';
-    }
-  }, [score]);
-
   return (
     <div>
       <BrowserRouter>

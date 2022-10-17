@@ -3,6 +3,7 @@ import Logo from '../../img/logo.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useNavigate } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import './NavBar.css';
 
 function LinkTab(props) {
@@ -41,7 +42,6 @@ function NavBar() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
-    console.log(newValue);
     setValue(newValue);
   };
 
@@ -76,38 +76,55 @@ function NavBar() {
 
   return (
     <>
-      <div className="navUpper">
-        <img
-          onClick={() => navigate('/')}
-          className="logoImg"
-          src={Logo}
-          alt="logo"
-        />
-      </div>
-      <div className="navLinks">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="nav tabs example"
-        >
-          <LinkTab sx={styles.navLinks} label="Home" link="/" />
-          <LinkTab sx={styles.navLinks} label="Asia" link="/asia" />
-          <LinkTab
-            sx={styles.navLinks}
-            label="North America"
-            link="/north-america"
-          />
-          <LinkTab
-            sx={styles.navLinks}
-            label="South America"
-            link="/south-america"
-          />
-          <LinkTab sx={styles.navLinks} label="Africa" link="/africa" />
-          <LinkTab sx={styles.navLinks} label="Europe" link="/europe" />
-          <LinkTab sx={styles.navLinks} label="About Us" link="/about" />
-          <LinkTab sx={styles.navLinks} label="Contact" link="/contact" />
-        </Tabs>
-      </div>
+      {window.innerWidth > 1000 && (
+        <>
+          <div className="navUpper">
+            <img
+              onClick={() => navigate('/')}
+              className="logoImg"
+              src={Logo}
+              alt="logo"
+            />
+          </div>
+          <div className="navLinks">
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              aria-label="nav tabs example"
+            >
+              <LinkTab sx={styles.navLinks} label="Home" link="/" />
+              <LinkTab sx={styles.navLinks} label="Asia" link="/asia" />
+              <LinkTab
+                sx={styles.navLinks}
+                label="North America"
+                link="/north-america"
+              />
+              <LinkTab
+                sx={styles.navLinks}
+                label="South America"
+                link="/south-america"
+              />
+              <LinkTab sx={styles.navLinks} label="Africa" link="/africa" />
+              <LinkTab sx={styles.navLinks} label="Europe" link="/europe" />
+              <LinkTab sx={styles.navLinks} label="About Us" link="/about" />
+              <LinkTab sx={styles.navLinks} label="Contact" link="/contact" />
+            </Tabs>
+          </div>
+        </>
+      )}
+      {window.innerWidth < 1000 && (
+        <>
+          <div className="navUpper">
+            <img
+              onClick={() => navigate('/')}
+              className="logoImg"
+              src={Logo}
+              alt="logo"
+            />
+            <GiHamburgerMenu className="hamburgIcon" />
+          </div>
+        </>
+      )}
     </>
   );
 }
