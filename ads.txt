@@ -1,4 +1,5 @@
 taboola.com,1492485,DIRECT,c228e6794e811952
+taboola.com,1492485,RESELLER,c228e6794e811952
 spotx.tv,71451,RESELLER
 spotxchange.com, 71451, RESELLER
 pubmatic.com, 156307, RESELLER, 5d62403b186f2ace
@@ -19,3 +20,6 @@ synacor.com, 82376, RESELLER, e108f11b2cdf7d5b
 sonobi.com, 9a1db44c9c, RESELLER, d1a215d9eb5aee9e
 yahoo.com, 59189, RESELLER
 aniview.com, 621cca388ba47d78a102e506, RESELLER, 78b21b97965ec3f8
+advertising.com, 8603, RESELLER
+fyber.com, ad9de41d28d494354b23133f26f83122, RESELLER 
+fyber.com, 1a12a7e3f84fe560ccf95a3a73043abb, RESELLER

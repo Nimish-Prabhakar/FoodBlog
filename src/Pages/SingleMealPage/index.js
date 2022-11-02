@@ -17,7 +17,7 @@ function SingleMealPage() {
   const [currentUrl, setCurrentUrl] = useState('');
 
   useEffect(() => {
-    if (window.innerWidth > 1000) {
+    if (window.innerWidth > 600) {
       setTimeout(() => {
         const adsArea = document.getElementById('ads-ref');
         const elements1 = document.querySelectorAll(`[data-item-id^="~~V1~~"]`);
@@ -64,7 +64,7 @@ function SingleMealPage() {
     continent = continent.charAt(0).toUpperCase() + continent.slice(1);
     setCurrentUrl(continent + '/' + dish);
     fetch(
-      `https://karkhana-studio-backend.onrender.com/api/data?location=${continent}&food=${dish}`
+      `https://karkhana-studio-backend.onrender.com/api/data?location=${continent}&food=${dish}&source=Meals`
     )
       .then((response) => response.json())
       .then((data) => {
